@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="29.06.2023 14:31" projectChecksumState="1" projectChecksum="b68aedf5">
+<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="02.07.2023 20:43" projectChecksumState="1" projectChecksum="86f4e39e">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="FFPGA" partNumber="61" package="26">
         <nvmData registerLenght="352">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</nvmData>
         <checksum crc32="0xDE58525C" version="1"/>
         <VDDItem id="0">
             <item id="0" caption="VDD (PIN 22)">
-                <graphics pos="(1350.00,143.10)" angle="0" flipping="2" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(847.57,-74.78)" angle="0" flipping="2" hidden="0" tOrigin="(20.00,10.00)"/>
             </item>
         </VDDItem>
         <VDDItem id="1">
             <item id="1" caption="VDDIO (PIN 21)">
-                <graphics pos="(1350.00,226.67)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(1079.73,-69.79)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
             </item>
         </VDDItem>
         <item id="2" caption="GND (PIN 12)">
@@ -22,39 +22,43 @@
         </item>
         <item id="4" caption="GPIO0 (PIN 13)">
             <graphics pos="(35.00,594.56)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-7.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">CLK_OUT</textLabel>
+            <textLabel pos="(-7.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_RX</textLabel>
         </item>
         <item id="5" caption="GPIO1 (PIN 14)">
             <graphics pos="(150.00,546.48)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(7.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SCL</textLabel>
+            <textLabel pos="(-25.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_RX_DONE</textLabel>
         </item>
         <item id="6" caption="GPIO2 (PIN 15)">
             <graphics pos="(35.00,498.41)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(5.50,-27.85)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SDA</textLabel>
+            <textLabel pos="(-10.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SAMP_CLK</textLabel>
         </item>
         <item id="7" caption="GPIO3 (PIN 16)">
             <graphics pos="(150.00,450.33)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-8.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">AUX_OUT</textLabel>
+            <textLabel pos="(-6.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_TX</textLabel>
         </item>
         <item id="8" caption="GPIO4 (PIN 17)">
             <graphics pos="(35.00,402.25)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(9.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">EN</textLabel>
+            <textLabel pos="(-24.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_TX_DONE</textLabel>
         </item>
         <item id="9" caption="GPIO5 (PIN 18)">
             <graphics pos="(35.00,192.92)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(7.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">WR</textLabel>
+            <textLabel pos="(7.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SCL</textLabel>
         </item>
         <item id="10" caption="GPIO6 (PIN 19)">
             <graphics pos="(150.00,144.84)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+            <textLabel pos="(5.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SDA</textLabel>
         </item>
         <item id="11" caption="GPIO7 (PIN 20)">
             <graphics pos="(35.00,97.76)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+            <textLabel pos="(-2.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">i2c_WR</textLabel>
         </item>
         <item id="12" caption="GPIO8 (PIN 23)">
             <graphics pos="(1094.00,50.02)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
+            <textLabel pos="(-0.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">i2c_EN</textLabel>
         </item>
         <item id="13" caption="GPIO9 (PIN 24)">
             <graphics pos="(1200.00,102.11)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
+            <textLabel pos="(-5.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">DEBUG2</textLabel>
         </item>
         <item id="14" caption="GPIO10 (PIN 1)">
             <graphics pos="(1094.00,155.19)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -76,6 +80,7 @@
         </item>
         <item id="20" caption="GPIO18 (PIN 9/GrP0)">
             <graphics pos="(1094.00,606.58)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
+            <textLabel pos="(-2.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">DEBUG</textLabel>
         </item>
         <item id="21" caption="GPIO17 (PIN 8/GrP1)">
             <graphics pos="(1200.00,554.50)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -102,16 +107,16 @@
             <graphics pos="(340.00,50.00)" angle="0" flipping="0" hidden="0" tOrigin="(300.00,300.00)"/>
         </item>
         <wire output="79" input="65" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="0" wireText="NET0" wireState="0">
-            <points>(220.00,70.00); (238.00,70.00); (238.00,245.00); (220.00,245.00)</points>
+            <points>(220.00,70.00); (233.00,70.00); (233.00,245.00); (220.00,245.00)</points>
         </wire>
         <wire output="79" input="38" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="0" wireText="NET0" wireState="0">
             <points>(220.00,70.00); (319.00,70.00)</points>
         </wire>
         <wire output="39" input="63" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="1" wireText="NET1" wireState="0">
-            <points>(319.00,54.00); (118.00,54.00); (118.00,65.00); (129.00,65.00)</points>
+            <points>(319.00,54.00); (115.00,54.00); (115.00,65.00); (129.00,65.00)</points>
         </wire>
         <wire output="40" input="64" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="2" wireText="NET2" wireState="0">
-            <points>(319.00,86.00); (118.00,86.00); (118.00,75.00); (129.00,75.00)</points>
+            <points>(319.00,86.00); (115.00,86.00); (115.00,75.00); (129.00,75.00)</points>
         </wire>
         <wire output="20" input="62" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="3" wireText="NET3" wireState="0">
             <points>(1177.00,385.00); (960.00,385.00)</points>
@@ -120,7 +125,7 @@
             <points>(1071.00,368.00); (960.00,368.00)</points>
         </wire>
         <wire output="82" input="41" autoRouting="1" pen="#ff8000ff;3.00;1;32;128" lineType="4" protected="1" CWLid="5" wireText="NET5" wireState="0">
-            <points>(641.00,845.00); (641.00,851.00); (307.00,851.00); (307.00,646.00); (319.00,646.00)</points>
+            <points>(641.00,845.00); (641.00,851.00); (305.00,851.00); (305.00,646.00); (319.00,646.00)</points>
         </wire>
         <wire output="21" input="75" autoRouting="1" pen="#ff8000ff;3.00;1;32;128" lineType="4" protected="1" CWLid="6" wireText="NET6" wireState="0">
             <points>(559.00,670.00); (559.00,754.00)</points>
@@ -156,10 +161,10 @@
             <points>(97.00,515.00); (226.00,515.00); (226.00,391.00); (220.00,391.00)</points>
         </wire>
         <wire output="80" input="39" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="17" wireText="NET17" wireState="0">
-            <points>(129.00,288.00); (116.00,288.00); (116.00,235.00); (308.00,235.00); (308.00,246.00); (319.00,246.00)</points>
+            <points>(129.00,288.00); (116.00,288.00); (116.00,233.00); (308.00,233.00); (308.00,246.00); (319.00,246.00)</points>
         </wire>
         <wire output="81" input="40" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="18" wireText="NET18" wireState="0">
-            <points>(129.00,348.00); (116.00,348.00); (116.00,403.00); (308.00,403.00); (308.00,391.00); (319.00,391.00)</points>
+            <points>(129.00,348.00); (116.00,348.00); (116.00,401.00); (308.00,401.00); (308.00,391.00); (319.00,391.00)</points>
         </wire>
         <wire output="34" input="67" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="19" wireText="NET19" wireState="0">
             <points>(319.00,326.00); (220.00,326.00)</points>
@@ -243,40 +248,40 @@
             <points>(960.00,507.00); (1071.00,507.00)</points>
         </wire>
         <wire output="60" input="19" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="46" wireText="NET46" wireState="0">
-            <points>(319.00,631.00); (108.00,631.00); (108.00,651.00); (56.00,651.00); (56.00,635.00)</points>
+            <points>(319.00,631.00); (108.00,631.00); (108.00,649.00); (56.00,649.00); (56.00,635.00)</points>
         </wire>
         <wire output="61" input="20" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="47" wireText="NET47" wireState="0">
-            <points>(319.00,583.00); (220.00,583.00); (220.00,603.00); (171.00,603.00); (171.00,586.00)</points>
+            <points>(319.00,583.00); (220.00,583.00); (220.00,592.00); (171.00,592.00); (171.00,586.00)</points>
         </wire>
         <wire output="62" input="21" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="48" wireText="NET48" wireState="0">
-            <points>(319.00,535.00); (108.00,535.00); (108.00,555.00); (56.00,555.00); (56.00,538.00)</points>
+            <points>(319.00,535.00); (108.00,535.00); (108.00,553.00); (56.00,553.00); (56.00,538.00)</points>
         </wire>
         <wire output="63" input="22" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="49" wireText="NET49" wireState="0">
             <points>(319.00,487.00); (220.00,487.00); (220.00,496.00); (171.00,496.00); (171.00,490.00)</points>
         </wire>
         <wire output="64" input="23" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="50" wireText="NET50" wireState="0">
-            <points>(319.00,439.00); (108.00,439.00); (108.00,459.00); (56.00,459.00); (56.00,442.00)</points>
+            <points>(319.00,439.00); (108.00,439.00); (108.00,457.00); (56.00,457.00); (56.00,442.00)</points>
         </wire>
         <wire output="65" input="24" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="51" wireText="NET51" wireState="0">
-            <points>(319.00,230.00); (102.00,230.00); (102.00,251.00); (56.00,251.00); (56.00,233.00)</points>
+            <points>(319.00,230.00); (313.00,230.00); (313.00,225.00); (108.00,225.00); (108.00,249.00); (56.00,249.00); (56.00,233.00)</points>
         </wire>
         <wire output="66" input="25" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="52" wireText="NET52" wireState="0">
-            <points>(319.00,182.00); (221.00,182.00); (221.00,203.00); (171.00,203.00); (171.00,185.00)</points>
+            <points>(319.00,182.00); (220.00,182.00); (220.00,191.00); (171.00,191.00); (171.00,185.00)</points>
         </wire>
         <wire output="67" input="26" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="53" wireText="NET53" wireState="0">
-            <points>(319.00,134.00); (102.00,134.00); (102.00,155.00); (56.00,155.00); (56.00,138.00)</points>
+            <points>(319.00,134.00); (108.00,134.00); (108.00,153.00); (56.00,153.00); (56.00,138.00)</points>
         </wire>
         <wire output="68" input="27" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="54" wireText="NET54" wireState="0">
             <points>(960.00,90.00); (1060.00,90.00); (1060.00,96.00); (1115.00,96.00); (1115.00,90.00)</points>
         </wire>
         <wire output="69" input="28" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="55" wireText="NET55" wireState="0">
-            <points>(960.00,142.00); (1172.00,142.00); (1172.00,155.00); (1221.00,155.00); (1221.00,142.00)</points>
+            <points>(960.00,142.00); (1172.00,142.00); (1172.00,161.00); (1221.00,161.00); (1221.00,142.00)</points>
         </wire>
         <wire output="70" input="29" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="56" wireText="NET56" wireState="0">
             <points>(960.00,194.00); (1060.00,194.00); (1060.00,201.00); (1115.00,201.00); (1115.00,195.00)</points>
         </wire>
         <wire output="71" input="30" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="57" wireText="NET57" wireState="0">
-            <points>(960.00,246.00); (1172.00,246.00); (1172.00,259.00); (1221.00,259.00); (1221.00,247.00)</points>
+            <points>(960.00,246.00); (1172.00,246.00); (1172.00,265.00); (1221.00,265.00); (1221.00,247.00)</points>
         </wire>
         <wire output="72" input="31" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="58" wireText="NET58" wireState="0">
             <points>(960.00,298.00); (1060.00,298.00); (1060.00,305.00); (1115.00,305.00); (1115.00,299.00)</points>
@@ -285,19 +290,19 @@
             <points>(960.00,351.00); (1172.00,351.00); (1172.00,357.00); (1221.00,357.00); (1221.00,351.00)</points>
         </wire>
         <wire output="74" input="33" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="60" wireText="NET60" wireState="0">
-            <points>(960.00,437.00); (1060.00,437.00); (1060.00,451.00); (1115.00,451.00); (1115.00,438.00)</points>
+            <points>(960.00,437.00); (1060.00,437.00); (1060.00,444.00); (1115.00,444.00); (1115.00,438.00)</points>
         </wire>
         <wire output="75" input="34" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="61" wireText="NET61" wireState="0">
-            <points>(960.00,489.00); (1172.00,489.00); (1172.00,507.00); (1221.00,507.00); (1221.00,490.00)</points>
+            <points>(960.00,489.00); (1172.00,489.00); (1172.00,505.00); (1221.00,505.00); (1221.00,490.00)</points>
         </wire>
         <wire output="76" input="35" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="62" wireText="NET62" wireState="0">
-            <points>(960.00,646.00); (1060.00,646.00); (1060.00,659.00); (1115.00,659.00); (1115.00,647.00)</points>
+            <points>(960.00,646.00); (1060.00,646.00); (1060.00,665.00); (1115.00,665.00); (1115.00,647.00)</points>
         </wire>
         <wire output="77" input="36" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="63" wireText="NET63" wireState="0">
-            <points>(960.00,594.00); (1172.00,594.00); (1172.00,611.00); (1221.00,611.00); (1221.00,595.00)</points>
+            <points>(960.00,594.00); (1172.00,594.00); (1172.00,609.00); (1221.00,609.00); (1221.00,595.00)</points>
         </wire>
         <wire output="78" input="37" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="64" wireText="NET64" wireState="0">
-            <points>(960.00,541.00); (1060.00,541.00); (1060.00,555.00); (1115.00,555.00); (1115.00,542.00)</points>
+            <points>(960.00,541.00); (1060.00,541.00); (1060.00,548.00); (1115.00,548.00); (1115.00,542.00)</points>
         </wire>
         <wire output="0" input="42" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="65" wireText="NET65" wireState="0">
             <points>(97.00,611.00); (313.00,611.00); (313.00,615.00); (319.00,615.00)</points>
@@ -359,7 +364,7 @@
     </chip>
     <emulatorConfiguration version="4" oldestCompatibleVersion="4">
         <settings>
-            <autoApply value="0"/>
+            <autoApply value="1"/>
             <platformSelector id="6"/>
         </settings>
         <platform id="0" friendlyName="GreenPAK DIP Development Platform">
@@ -424,13 +429,24 @@
         </platform>
         <platform id="6" friendlyName="ForgeFPGA Advanced Development Platform">
             <lastConfiguration modified="1">
-                <SaveEmulator Name="Default">
+                <SaveEmulator Name="UART_generator_test">
                     <PowerOptions synced="0"/>
                     <PowerSwitch internalPower="1" externalPower="0"/>
                     <ExpansionConnector>9:0;10:0;11:0;12:0;13:0;14:0;15:0;27:0;28:0;29:0;30:0;31:0;32:0;33:0;34:0;35:0;36:0;37:0;38:0;39:0;40:0;1021:0;1022:0;1023:0</ExpansionConnector>
                     <TestPoints>
-                        <TPC ID="9" Type="1">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="69" GlobalLink="1"/>
+                        <TPC ID="9" Type="14">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                            <GeneratorOpt GenType="11">
+                                <ParametricGenerator>
+                                    <commands>
+                                        <command type="UART" freq="115200" data="0ff0ff33" parity="0" ordering="0" endBitSize="1" frameSize="8"/>
+                                    </commands>
+                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
+                                        <levels>(7.812000e-05|4,0); (8.680000e-06|4,1); (8.680000e-06|4,0); (7.812000e-05|4,1); (7.812000e-05|4,0); (8.680000e-06|4,1); (8.680000e-06|4,0); (7.812000e-05|4,1); (8.680000e-06|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (8.680000e-06|4,1)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.300000e+03|6" pauseState="0" prestartState="1" outputState="12" prestartDelay="0.000000e+00|6" endState="1" link="1" sync="0"/>
+                                    </logicSequenceGenerator>
+                                </ParametricGenerator>
+                            </GeneratorOpt>
                         </TPC>
                         <TPC ID="10" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="82" GlobalLink="1"/>
@@ -441,22 +457,46 @@
                         <TPC ID="12" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="89" GlobalLink="1"/>
                         </TPC>
-                        <TPC ID="13" Type="6">
+                        <TPC ID="13" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="85" GlobalLink="1"/>
-                            <ButtonSettings UpSide="1" DownSide="0" LatchMode="1" DefaultConnection="1" ConnectedSide="1"/>
                         </TPC>
-                        <TPC ID="14" Type="6">
+                        <TPC ID="14" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="73" GlobalLink="1"/>
-                            <ButtonSettings UpSide="1" DownSide="0" LatchMode="1" DefaultConnection="0" ConnectedSide="1"/>
                         </TPC>
                         <TPC ID="15" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="79" GlobalLink="1"/>
                         </TPC>
-                        <TPC ID="27" Type="1">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="80" GlobalLink="1"/>
+                        <TPC ID="27" Type="14">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                            <GeneratorOpt GenType="11">
+                                <ParametricGenerator>
+                                    <commands>
+                                        <command type="Raw" data="(5.000000e+01|6,1); (5.000000e+01|6,1)"/>
+                                        <command type="Raw" data="(5.000000e+01|6,1); (5.000000e+01|6,0)"/>
+                                        <command type="Raw" data="(5.000000e+01|6,0); (5.000000e+01|6,0)"/>
+                                    </commands>
+                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
+                                        <levels>(1.500000e-04|4,1); (1.500000e-04|4,0)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.300000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="1.000000e+03|6" endState="1" link="1" sync="0"/>
+                                    </logicSequenceGenerator>
+                                </ParametricGenerator>
+                            </GeneratorOpt>
                         </TPC>
-                        <TPC ID="28" Type="1">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="65" GlobalLink="1"/>
+                        <TPC ID="28" Type="14">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                            <GeneratorOpt GenType="11">
+                                <ParametricGenerator>
+                                    <commands>
+                                        <command type="Raw" data="(5.000000e+01|6,1); (5.000000e+01|6,0)"/>
+                                        <command type="Raw" data="(5.000000e+01|6,1); (5.000000e+01|6,0)"/>
+                                        <command type="Raw" data="(5.000000e+01|6,1); (5.000000e+01|6,0)"/>
+                                    </commands>
+                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
+                                        <levels>(5.000000e-05|4,1); (5.000000e-05|4,0); (5.000000e-05|4,1); (5.000000e-05|4,0); (5.000000e-05|4,1); (5.000000e-05|4,0)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.300000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="1.000000e+03|6" endState="1" link="1" sync="0"/>
+                                    </logicSequenceGenerator>
+                                </ParametricGenerator>
+                            </GeneratorOpt>
                         </TPC>
                         <TPC ID="29" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="83" GlobalLink="1"/>
@@ -494,19 +534,19 @@
                         <TPC ID="40" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="86" GlobalLink="1"/>
                         </TPC>
-                        <TPC ID="1021" Type="8">
+                        <TPC ID="1021" Type="12">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="81" GlobalLink="0"/>
                             <GeneratorOpt GenType="5">
                                 <constantVoltageGenerator v="1.200000e+00|4">
-                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+00|5" stopPoint="1.000000e-01|5" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.300000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
                         </TPC>
-                        <TPC ID="1022" Type="8">
+                        <TPC ID="1022" Type="12">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="0"/>
                             <GeneratorOpt GenType="5">
                                 <constantVoltageGenerator v="2.300000e+00|4">
-                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+00|5" stopPoint="1.000000e-01|5" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.300000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
                         </TPC>
@@ -515,9 +555,134 @@
                         </TPC>
                     </TestPoints>
                     <I2C slaveAddress="-1"/>
+                    <TestPointsOrder>1021;1022;9;27;28</TestPointsOrder>
                 </SaveEmulator>
             </lastConfiguration>
-            <savedConfigurations/>
+            <savedConfigurations>
+                <SaveEmulator Name="UART_generator_test">
+                    <PowerOptions synced="0"/>
+                    <PowerSwitch internalPower="1" externalPower="0"/>
+                    <ExpansionConnector>9:0;10:0;11:0;12:0;13:0;14:0;15:0;27:0;28:0;29:0;30:0;31:0;32:0;33:0;34:0;35:0;36:0;37:0;38:0;39:0;40:0;1021:0;1022:0;1023:0</ExpansionConnector>
+                    <TestPoints>
+                        <TPC ID="9" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="69" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="10" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="82" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="11" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="84" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="12" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="89" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="13" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="85" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="14" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="73" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="15" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="79" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="27" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="80" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="28" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="65" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="29" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="83" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="30" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="68" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="31" Type="14">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                            <GeneratorOpt GenType="11">
+                                <ParametricGenerator>
+                                    <commands>
+                                        <command type="UART" freq="115200" data="0" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="80" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="40" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="c0" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="20" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="a0" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="60" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="e0" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="10" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="90" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                        <command type="UART" freq="115200" data="8" parity="0" ordering="1" endBitSize="1" frameSize="8"/>
+                                        <command type="Raw" data="(5.000000e+02|5,1); (5.000000e+02|5,1)"/>
+                                    </commands>
+                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
+                                        <levels>(7.812000e-05|4,0); (1.000009e+00|4,1); (8.680000e-06|4,0); (8.680000e-06|4,1); (6.076000e-05|4,0); (1.000009e+00|4,1); (1.736000e-05|4,0); (8.680000e-06|4,1); (5.208000e-05|4,0); (1.000009e+00|4,1); (8.680000e-06|4,0); (1.736000e-05|4,1); (5.208000e-05|4,0); (1.000009e+00|4,1); (2.604000e-05|4,0); (8.680000e-06|4,1); (4.340000e-05|4,0); (1.000009e+00|4,1); (8.680000e-06|4,0); (8.680000e-06|4,1); (8.680000e-06|4,0); (8.680000e-06|4,1); (4.340000e-05|4,0); (1.000009e+00|4,1); (1.736000e-05|4,0); (1.736000e-05|4,1); (4.340000e-05|4,0); (1.000009e+00|4,1); (8.680000e-06|4,0); (2.604000e-05|4,1); (4.340000e-05|4,0); (1.000009e+00|4,1); (3.472000e-05|4,0); (8.680000e-06|4,1); (3.472000e-05|4,0); (1.000009e+00|4,1); (8.680000e-06|4,0); (8.680000e-06|4,1); (1.736000e-05|4,0); (8.680000e-06|4,1); (3.472000e-05|4,0); (1.000009e+00|4,1); (4.340000e-05|4,0); (8.680000e-06|4,1); (2.604000e-05|4,0); (1.000009e+00|4,1)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.100095e+07|6" pauseState="0" prestartState="1" outputState="12" prestartDelay="0.000000e+00|6" endState="1" link="1" sync="0"/>
+                                    </logicSequenceGenerator>
+                                </ParametricGenerator>
+                            </GeneratorOpt>
+                        </TPC>
+                        <TPC ID="32" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="71" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="33" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="74" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="34" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="75" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="35" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="76" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="36" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="92" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="37" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="90" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="38" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="88" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="39" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="67" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="40" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="86" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="1021" Type="12">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="81" GlobalLink="0"/>
+                            <GeneratorOpt GenType="5">
+                                <constantVoltageGenerator v="1.200000e+00|4">
+                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.100095e+07|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                </constantVoltageGenerator>
+                            </GeneratorOpt>
+                        </TPC>
+                        <TPC ID="1022" Type="12">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="0"/>
+                            <GeneratorOpt GenType="5">
+                                <constantVoltageGenerator v="2.300000e+00|4">
+                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.100095e+07|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                </constantVoltageGenerator>
+                            </GeneratorOpt>
+                        </TPC>
+                        <TPC ID="1023" Type="3">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="-1" GlobalLink="1"/>
+                        </TPC>
+                    </TestPoints>
+                    <I2C slaveAddress="-1"/>
+                    <TestPointsOrder>31;1021;1022</TestPointsOrder>
+                </SaveEmulator>
+            </savedConfigurations>
         </platform>
         <platform id="7" friendlyName="ForgeFPGA Evaluation Board">
             <lastConfiguration modified="0">
@@ -642,38 +807,35 @@
         </settings>
         <openedTabs>
             <openedTab>main</openedTab>
-            <openedTab>i2c_master</openedTab>
             <openedTab>I/O Planner</openedTab>
             <openedTab>Floorplan</openedTab>
+            <openedTab>sampleClkGen</openedTab>
+        </openedTabs>
+        <openedTabs>
+            <openedTab>i2c_master</openedTab>
+            <openedTab>input_reset_buf</openedTab>
+            <openedTab>main</openedTab>
         </openedTabs>
         <custom-modules>
-            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="52530">AAANA3jalVddb9owFH1ufsWV9tBQpYXQwbohHlKStmhQEEnbVdUUBWJar5CgJKxdH/bbd23nO9CllhDE95xzbef42jSbYLw6682KwCbwf5FFJEnyEUT+Bo4asPbdLUYW/taLSGCr3TmN4JMsAWycwFkT7AT9xrqHPrQ7HWg24dZZbQksA38NKqpAt9M57UgNkCUMjh3qAfU22yhECUxD/Y3j2uQVdTxnZW+op8Bi9TzfLm3qPVGWDUfBGaxf2cfKUF5AQhIpLNvEHODIvSV9BH8bvZeU0QWEkeyBNRvZxrXyEfh4oht1CNPRSBCm+ofgg9F32zRGxsAaTq4/xDy/n2qmWYfy0PnW+pkRZ8aFPrytRVTVAvPivC6xXeBNJ6aFTFWpdLX5Gx1swwiNNZzUkA7II5jaeMpWjg2lBsXUNXui1AUaNdzIkcO66QejmukZ0PifqhjBeIgOvZvVkY2hH5Out01iaA3pmKDd/LAnN5ZSH6pKjZ4kOWFIH738LsbSpB7O1V4lxHZsGkRzoeWScnGB0hi6YHlAbSXU3N4VxFavEirs070osSfTcCXONxCGP3+ucsW2ZNxqLNlAGO3sjbZFtNlMANmLLy9W9t7SSBKKlx37sTBj98pfOCt+KsDg2rLvGKHbk15oQOCB9xzzIhGfJRYeMAxx6HZPkR3yI2iwer4kHrAH/MmOGYATlJfx01DEoyjwsvhKOokns9Hh48GJ60QOnh5ylqih4MnEZq22x1dvCnRP2Qp8PX2+ekN8ki0pFg1mJJcsxVzi6MndULeukMZnggNuHuVnDLpmabbA8NbHz1mvAJkZl0PTMmYJbAdE0/WZYZqpEIN8wWR8EbE9ZGnEYsaNthf22gnZEb32Q2qzJUDy2eGTpvUydnEEqUKOjUWT8h+O6+ICh0Lk/DwnUhhjNoqciEt+0wUpSrTb+Wmondzgs5bXoL+pi5cLbpGnVquF82AVveYi0NDni5CS9rUcab4N/+Agsx4WFB5MGnrRXzxXVXL+TKHcn7ZXgRaMm6KJ58xXpCocb0DuYBXgmF2pwsgJIliG63JCrJEvAY3IDom7WSxxDAwH/oYETkR9r6iRuaeosctg1QmXvFPlliFliZJzdqUvQlCgpBD7BvZPIIaUc6eeeWfqCaTMZdbZYS655K4SreSA5HQLSUDxS5QxkPkNImYeHOyECdDkfZDtE5D/iptLitxHED6X+UVjvyxHxbr8SlIsnTj7k1xd7OeKZAlVKo39Uq0soYtVsl+smpUDip2FlV1+1JSI54p/N9I/qiTHXQ==</hdl-module>
-            <hdl-module name="i2c_master" module-type="0" module-id="1" compressed="0" checksum="43680">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</hdl-module>
+            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="40857">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</hdl-module>
+            <hdl-module name="input_reset_buf" module-type="0" module-id="1" compressed="0" checksum="34157">AAABYHjajZDLCsMgEEX3fsV0l0AhZJ0W+ifW6FQkRsUHoX9fH31mVRc63rnHuXiNasXAmUYYTYABRhcIWa1IWVHGpUg9Box0TreOQJOgLkW5Xo61HIZXh2vLFxB2ZcpAUNIwvaec9XvK2Q091EEfyKZYeh4lWOrDky/Qu/Pj7yeS92L3ZUa9Mb2xe4BL52xAIbGF7mFGqQwp71UvnM4t2JQ1NOI/tKXK6MF/swAkH+0LyQMdV2zj</hdl-module>
             <hdl-module name="sampleClkGen" module-type="0" module-id="2" compressed="0" checksum="48544">AAACRnjafZJfa4MwFMWfm09xxx6qzGFtaWFzhUEHcw99G/RhjJHWOyfGREykrA/77MsfFedK82CO58ZzfgHDEDaNVKKErUgbhoSUdgdJy4rhhhXPyOHaI6BXRWtaosIadi9PrwmsIVoR381yXjUKjnmNcGBFMPaQ/7N4jRJVQCbOe7OZt9H97B1SquhHzgMIw7lpmW+TUwCrhdbLu0WRnMhENMp8VWNmUTUo8WNCzPsw6SAaroH1hLIj/Zbw6FVCYppZTF8z7THLuWP7BO/KUfnWGA7NasPgYQ3Tr1nc+y2A8aPpvh8gT61CJvFsninsM7tL+6NDo+JO3kAUD850XV3f5ZA/9KMb/LT6fLpT7kn05v6WX0zdnNU=</hdl-module>
+            <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="43680">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</hdl-module>
+            <hdl-module name="main_tb" module-type="1" module-id="1" compressed="0" checksum="15343">AAAK9XjatVZtb9s2EP6uX3FoC1TCslrymjSbGmBO46xGkyZw3BZbUXC0RClE9QaJTtIv++07Um+kaCxFgQmw5Ds+eu5OfHgk/C14zpqIZgyCopkFVeM4kJfxDh055QURW3C90AGoaE1zJlgNq/fkzcU78vYv6K8TeDknvu/Ln4k9W2wW5Hy9uFyO2ONweBFmMyh2+RaRZQIxFRS2XDRgcJwuPpyR9WKz1OIFweEcY/UcoqZFk3MheJFCUzEWmxRXH5frm8Xl9cXq/R/k8upsKSmOQj0NjIs5JA3DB2Zzx+qMVibLzebqmpyuNqAnYhaTsSIVt7KYRpSVIjUoLm5OwbwsilgCc14waFjNadZ+FlVhggzBCVwiiSgVl5nf8oK8WfwneVTmeVlARMVtGTOArMS5Vwwg5/R6uV5dneFrczWPzmMAbRS/yzh6fNQKgReCpZgZD1FWULMUOImyr+FgVGU9GvWD/H/PawZlE5FI1Blhhe1DfbLBWz+QcrRKgqVpVrkThE7s7cSOJnY8sdnETiZ2qorb0VoQUZJXDdby1JXfDuCFvVZcy+UdtFh7rbiWyzvoiO1F4VquAWzL37VcA9hWuWu5BrCtZ9dy9fXZ8nQtl4dQD+KdALd9SellfMEwe2IlIx2jmSOmfgAdo5k9RhOdxBimhZEi1DDS7DFKkmMswxx4pFBHjGGOGCXfEaOZwwx0mjZB231EkYmJ9mFiExPvwzATw/ZhEhOT7MOkJibVFKBWFM3u6bcG19LYeGZzr+0g2GP+6VqJ0+4AtPkqv4h6flisN+TTerVZktM/N8tQReVFhbL6PC6pn4Pf/C+qu4bIIJ+fX6GnAw+NS5pblvLCaRNU0nmNnfX51g8731N3bH+eZJMNsB8LfLVTzWa/ohMbt5A9nWX0G3SIBOXqciwJYRxea5sm2ifo+gkCz+nVoeei56MK4F9CbchKq4urZQfAitiZcmFtwUBksUxJWga8y4/vqLbPhdy5xlSfxbu8SjieKtwn3bnixV0UP/HCcfiO1g24/kF/8OjG+vn2e1Oubs2UC1nuc874sdXf392qbFicspbBm6rCPX5+6weemhncxTJ5dFDquee4g9M63eWsEOB355qg5T/yhwB9Jn1obeh/j/09Aea/fEeAQAYIfizAy8PHAwSyguAHKzg/fzRAgBeRtzbA4cD/LEEVNrdhq0xUJd7bg+2/MDvS8g==</hdl-module>
         </custom-modules>
-        <ip-modules/>
+        <ip-modules>
+            <hdl-module name="seven_segment_display" module-type="0" module-id="0" compressed="0" checksum="46390">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</hdl-module>
+            <hdl-module name="uart_rxtx" module-type="0" module-id="1" compressed="0" checksum="5840">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</hdl-module>
+            <hdl-module name="seven_segment_display_tb" module-type="1" module-id="0" compressed="0" checksum="26835">AAAO2Hja7VdNc5tIEL3zK7qsHOQskcBJdjf2+oAlZFGRQAU4XlcqpR3BCI2CGApGUvmyv317BpDBji9bOUblguk3/fl6piUP32rvft5HG/H8sWDJRsCFcWHCmJGUJxDQHYt4Fu8jwQtNW9Bix8qS8QxYCRta0NUjJAXJBI11WBeUAl9DtCFFQnUQHEj2CDktSjTgK0FYxrIECEQYTGqKDbop+VocSUFROQZSljxiBP1BzKP9jmaCCBlvzVJaQl9sKJwFtcXZua5hkJiSFFgGcq/ZgiMTG74XUNBSFCySPnRUitJ9LHNotlO2Y3UEaa4YKGXm+xIrkHnqsOMxW8s3VWXl+1XKyo0OMZOuV3uBYCnBiGZopWEdQ15ASdNUemCYt6r1KTtd1YpRckmoqClScY8bvutWghSt90WGIamyiTlSpiJuaSQkItXXPE35UZYm+8VkReWlFuIOWfEDVaVU/c24wEyrDCT/+VNT661yQzD1Fa35wrDILmlVU8jopcC+4zGBnBcq3PMqB5oWTm0IvEl4b/k2OAEsfO+LM7bHcGYFKJ/pcO+EU+8uBNTwLTd8AG8ClvsAnx13rIP998K3gwA8H5z5YubYiDnuaHY3dtxbuEE71wth5sydEJ2GHsiAtSvHDqSzue2PpihaN87MCR90beKErvQ5QacWLCw/dEZ3M8uHxZ2/8AIbw4/Rreu4Ex+j2HPbDQcYFTGwv6AAwdSazVQo6w6z91V+I2/x4Du30xCm3mxsI3hjY2bWzcyuQmFRo5nlzHVtbM2tW1tZeejFV2pVdnA/tRWE8Sz8G4WO58oyRp4b+ijqWKUfnkzvncDWwfKdQBIy8b25DpJOtPCUE7Rz7cqLpBo6HUEVKd8FtnbKZWxbM/QVSOO28uCnjpsbUlKY83ifUnDJjl7idTnQbFnSZIn3Kl9GokiXF/FSrLSQ8xQOeEXwkF1qcDpflzBZ3FpofmAJwfkEB3NgaD49sEbT+DgwzYEaaIVhmPAOXHoEgSMBT3cWbXB0lCzJfmplb4ea9o9gO1pGBIsz8V4MwcxLTdtV5Z4KlcNNFZuSR6zzChMeDhekQDoELVDKmzUE9mw5suAazErLyfK9KHFZULzw6fereplyEjfrDEcfFY309dOl8Q1iIkiD0KxZFRRHd7lZRimPvlcBvL2oIxwZziAclUtleJJWHSnqSHFHoh1p3ZGSrl1+Er+aMl2Cc/tAkaOEYSG4x/CbJkE+2FVL2KqtH9IKvT5uQc0fLs8hxqlfgQMkDvr4wK8RJUv2oC+fDSL5gr58NkjFKvSrd4PSDPo0a6QOn9DviI2OYhT66tXGVhW2amNRhUVtLK6wuI3RCqNtbF1h6zaWVFjS8ZfXDvMGbZMP/bZ0LolUpJP0SB5L6F3IQ4jH8191FlVvmPpuWNGEZcrfm3i/y+W3eP/stRswOETx2fnVk/qBFGXf0F+9MlUSUAc3KkvVxZOkOniS6u6dZOzbad0zjc6+AofDJ6jWVvgax02fXRtXwP4yf8fnNfvNPG+VW6tspcpWqWyvt89VqvS+/nH54Rt6Zldd+L28AtfyeDdw76PRlGe2UNN4VrT8MOz8Fq5R8+P5Caw9//mt60Hqsld0P3V0aRZrzfsVgswnZs0f9aB38YvBVxg02ww+ob9Y/D8sGi9u+C8GX2Gwif1mzeT/GVKlJvblHEcycBoXnep7743uj4h2oN6HF3un6Rs3kfBR/TzS/gOcif0P</hdl-module>
+            <hdl-module name="uart_rxtx_tb" module-type="1" module-id="2" compressed="0" checksum="33884">AAAML3jarVbfc9pGEH7XX7FjZ6ZyqoDkJpnUJDMVIIwmIFFJxHUzGSrQAZcIHXM6gf3Sv717Jwmh2A99MOPBt7vf7re/OKn7Wnvzch9twPaPnG62Aq7NawuGNE7ZBkKyoyuWJcVKMK5pM8J3NM8py4DmsCWcLB9hw+NMkMSANScE2BpW25hviAGCQZw9wp7wHB3YUsQ0o9kGYlghmUSKLYbJ2VocY04QnECc52xFY4wHCVsVO5KJWEi+NU1JDrrYErgIK4+LK0NDkoTEKdAMpK02wZGKLSsEcJILTlcyhoGgVVokMofanNIdrRiku+pALjMvcqxA5mnAjiV0Lf8TVda+WKY03xqQUBl6WQhU5lK5Ihl6aVhHl3HISZrKCBTzVrU22RmqVmTZy4aKqkWK97hlu3Yl2KJ1wTOkJMonYdgyxfidrITUSPiapSk7ytLkvKisKL/RIrTES3YgqpRyvhkTmGmZgez/vhlqZcq3Maa+JFW/kBa7G59VwyV7LnDuuCawZ1zR/VxlR9OisQOhP4ru7MABN4RZ4H9xh84QLuwQ5QsD7txo7M8jQERge9E9+COwvXv47HpDA5y/ZoEThuAH4E5nE9dBnesNJvOh691CH/08P4KJO3UjDBr5IAmrUK4TymBTJxiMUbT77sSN7g1t5EaejDnCoDbM7CByB/OJHcBsHsz80EH6IYb1XG8UIIszdbyog6yoA+cLChCO7clEUdlzzD5Q+Q382X3g3o4jGPuToYPKvoOZ2f2JU1JhUYOJ7U4NbWhP7VtHefkYJVCwMju4GztKhXw2/g0i1/dkGQPfiwIUDawyiE6ud27oGGAHbigbMgr8qQGynejhqyDo5zllFNlqaE0EIVKeh452ymXo2BOMFUrnc3DnRa+bfpwTmLKkSAl48Y7cQBFzsRBLLWIshQP+IHClbjQ4bdMNjGa3NoIPdBPjbQQHq2NqATnQGmm+61hWR11f3DQteAMeOYLACwB3OVtt8aLI6SZ70TpedzXtH0F3JF/FWIqV5V1rn2varixNFcUfxANW1sMUu91ZzLFcgfWhuK8FcAeTz4tR4Py5GP8Nn+Dttak+vRZoaEc2guypg5APbVvfng8XgR1Jk/X79c+u/hfcSHvqytEupv5Qwd63MWHkzxZ9N5KmtmUS9mtlt+tm+0LI7DnByyb90auOGV61RNTS1ybZN9aN+Q2wB0ks4tqOIl4g/ITnD2V0vxBV+CPFy08odXVcJCwjJ/kJA28YFIDXDqhIGc5HFQSy0zMncP0h1nSt+nRmxfob64f3so8IOM0RLnUUATqtgennEj6UFOJsWnpzrq3NvPTTsbY9HZb+RFVjT0PT61NtkUPT8esKxStI8GFXpY4zAx2/amA5ONDL/7UWa9XFQyOV45K68nRmkV1XBnk412P3Sz0eaj3HuPyhkSpv3vbmtXd1UEWoUcTpMX7M4RL0ZpDd6yu5iTixf9VCIkzE+Q+Y4+W+uAvw4bDo30dOT8Wmcn+fbk+9OhIgyAa3npbikmxopk64qQ/wEX8IvyzNXqW51JuNuTopreq3Kz9rvKt0+snsAf3YkKL0if5qXVWgNk1DJbP6Sr/1zgzPMgKQLNHavpimdbI/51W64Ldslmwavp+pJ3qTy6uk2O3luxfoF+eXWeewSi6qOApziDm+nplG68orJwbVbE5dqxbuTIMJS6lK97RsZ4h6zVC1Nd+Vuj/0PctJsiGSoOzkTxPXPyD6bZXn2VTans95jd41Xk3C1v91fwHSVhcq4svfzGe7o1hME16tqXxR7JVj1TT8Kp9E2n+QDWwk</hdl-module>
+        </ip-modules>
         <io-spec-tool>
             <records filter="16">
-                <record id="CLK_t[0:0]_N_out0">
-                    <port-name>clk</port-name>
+                <record id="CLK_t[0:0]_W_in0">
+                    <port-name>i_clk</port-name>
                 </record>
-                <record id="CLK_t[0:0]_N_out1">
-                    <port-name>clk</port-name>
-                </record>
-                <record id="CLK_t[0:0]_S_out0">
-                    <port-name>clk</port-name>
-                </record>
-                <record id="CLK_t[0:0]_S_out1">
-                    <port-name>clk</port-name>
-                </record>
-                <record id="CLK_t[0:0]_W_in1">
-                    <port-name>clk</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:10]_in0">
-                    <port-name>MISC_EN</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:10]_out1">
-                    <port-name>MISC_EN_OE</port-name>
+                <record id="IOB_t[0:0]_xy[0:10]_out0">
+                    <port-name>o_tx_done</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:11]_out0">
                     <port-name>PLL_CTRL_CLK_SELECTION</port-name>
@@ -738,14 +900,26 @@
                 <record id="IOB_t[0:0]_xy[0:21]_out1">
                     <port-name>PLL_CTRL_POSTDIV2[2]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[0:22]_in0">
-                    <port-name>MISC_WR</port-name>
+                <record id="IOB_t[0:0]_xy[0:22]_out0">
+                    <port-name>SCL_O</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:22]_out1">
-                    <port-name>MISC_WR_OE</port-name>
+                    <port-name>SCL_OE</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:23]_in0">
+                    <port-name>SDA_I</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:23]_out0">
-                    <port-name>AUX_OUT1</port-name>
+                    <port-name>SDA_O</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:23]_out1">
+                    <port-name>SDA_OE</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:24]_in0">
+                    <port-name>MISC_WR</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:24]_out1">
+                    <port-name>MISC_WR_OE</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:25]_out0">
                     <port-name>OSC_CTRL_EN</port-name>
@@ -753,29 +927,23 @@
                 <record id="IOB_t[0:0]_xy[0:25]_out1">
                     <port-name>OSC_CTRL_MODE</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[0:6]_out0">
-                    <port-name>SAMP_CLK</port-name>
+                <record id="IOB_t[0:0]_xy[0:6]_in0">
+                    <port-name>i_rx</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:6]_out1">
+                    <port-name>o_rx_oe</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:7]_out0">
-                    <port-name>SCL_O</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:7]_out1">
-                    <port-name>SCL_OE</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:8]_in0">
-                    <port-name>SDA_I</port-name>
+                    <port-name>o_rx_done</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:8]_out0">
-                    <port-name>SDA_O</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:8]_out1">
-                    <port-name>SDA_OE</port-name>
+                    <port-name>SAMP_CLK</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:9]_out0">
-                    <port-name>AUX_OUT</port-name>
+                    <port-name>o_tx</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:11]_in0">
-                    <port-name>nreset</port-name>
+                    <port-name>i_por</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:19]_out0">
                     <port-name>PLL_CTRL_REFDIV[0]</port-name>
@@ -795,6 +963,42 @@
                 <record id="IOB_t[0:0]_xy[31:21]_out1">
                     <port-name>PLL_CTRL_REFDIV[5]</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:22]_out0">
+                    <port-name>bus_o[3]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:23]_out0">
+                    <port-name>bus_o[2]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:24]_out0">
+                    <port-name>bus_o[1]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:25]_out0">
+                    <port-name>bus_o[0]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:26]_out0">
+                    <port-name>dbg2</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:27]_in0">
+                    <port-name>MISC_EN</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:27]_out1">
+                    <port-name>MISC_EN_OE</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:4]_out0">
+                    <port-name>dbg</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:5]_out0">
+                    <port-name>bus_o[7]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:6]_out0">
+                    <port-name>bus_o[6]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:8]_out0">
+                    <port-name>bus_o[5]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:9]_out0">
+                    <port-name>bus_o[4]</port-name>
+                </record>
             </records>
         </io-spec-tool>
         <macrocell-mode-data>
@@ -805,12 +1009,12 @@
             </scene-data>
             <macrocells-data>
                 <macrocell>
-                    <macrocell-id>18</macrocell-id>
+                    <macrocell-id>35</macrocell-id>
                     <macrocell-type>2</macrocell-type>
                     <macrocell-title>Input</macrocell-title>
-                    <macrocell-name>input18</macrocell-name>
-                    <macrocell-posx>-440</macrocell-posx>
-                    <macrocell-posy>-240</macrocell-posy>
+                    <macrocell-name>input35</macrocell-name>
+                    <macrocell-posx>-460</macrocell-posx>
+                    <macrocell-posy>-260</macrocell-posy>
                     <macrocell-input-ports/>
                     <macrocell-output-ports>
                         <port>
@@ -824,11 +1028,11 @@
                     </macrocell-output-ports>
                 </macrocell>
                 <macrocell>
-                    <macrocell-id>20</macrocell-id>
+                    <macrocell-id>37</macrocell-id>
                     <macrocell-type>2</macrocell-type>
                     <macrocell-title>Input</macrocell-title>
-                    <macrocell-name>input20</macrocell-name>
-                    <macrocell-posx>-440</macrocell-posx>
+                    <macrocell-name>input37</macrocell-name>
+                    <macrocell-posx>-460</macrocell-posx>
                     <macrocell-posy>0</macrocell-posy>
                     <macrocell-input-ports/>
                     <macrocell-output-ports>
@@ -843,7 +1047,7 @@
                     </macrocell-output-ports>
                 </macrocell>
                 <macrocell>
-                    <macrocell-id>22</macrocell-id>
+                    <macrocell-id>39</macrocell-id>
                     <macrocell-type>4</macrocell-type>
                     <macrocell-title>NOT Gate</macrocell-title>
                     <macrocell-name></macrocell-name>
@@ -871,11 +1075,11 @@
                     </macrocell-output-ports>
                 </macrocell>
                 <macrocell>
-                    <macrocell-id>25</macrocell-id>
+                    <macrocell-id>42</macrocell-id>
                     <macrocell-type>8</macrocell-type>
                     <macrocell-title>NAND Gate</macrocell-title>
                     <macrocell-name></macrocell-name>
-                    <macrocell-posx>240</macrocell-posx>
+                    <macrocell-posx>260</macrocell-posx>
                     <macrocell-posy>-200</macrocell-posy>
                     <macrocell-input-ports>
                         <port>
@@ -907,12 +1111,12 @@
                     </macrocell-output-ports>
                 </macrocell>
                 <macrocell>
-                    <macrocell-id>29</macrocell-id>
+                    <macrocell-id>46</macrocell-id>
                     <macrocell-type>3</macrocell-type>
                     <macrocell-title>Output</macrocell-title>
-                    <macrocell-name>output29</macrocell-name>
-                    <macrocell-posx>640</macrocell-posx>
-                    <macrocell-posy>-140</macrocell-posy>
+                    <macrocell-name>output46</macrocell-name>
+                    <macrocell-posx>660</macrocell-posx>
+                    <macrocell-posy>-160</macrocell-posy>
                     <macrocell-input-ports>
                         <port>
                             <port-id>30</port-id>
@@ -953,10 +1157,10 @@
     </fpga-data>
     <projectData>
         <specs>
-            <lastModify lastModifyValue="27.06.2023 20:06:04"/>
-            <vddSpecs vddMin="1.09" vddTyp="1.1" vddMax="1.21"/>
+            <lastModify lastModifyValue="19.11.2021 12:24:51"/>
+            <vddSpecs vddMin="0.99" vddTyp="1.1" vddMax="1.21"/>
             <vdd2Specs vdd2Min="1.71" vdd2Typ="2.5" vdd2Max="3.6"/>
-            <tempSpecs tempMin="-39" tempTyp="26" tempMax="85"/>
+            <tempSpecs tempMin="-40" tempTyp="25" tempMax="85"/>
         </specs>
         <projectDataFields>
             <textLineDataField name="Customer Name" id="2" text=""/>
@@ -1002,6 +1206,21 @@
         </preset0>
         <preset1>
             <markers>
+                <marker0>
+                    <color>1</color>
+                    <index>1</index>
+                    <time>900000</time>
+                </marker0>
+                <marker1>
+                    <color>2</color>
+                    <index>2</index>
+                    <time>78120</time>
+                </marker1>
+                <marker2>
+                    <color>3</color>
+                    <index>3</index>
+                    <time>8680</time>
+                </marker2>
                 <trigTime>0</trigTime>
             </markers>
             <measurements>
@@ -1011,28 +1230,20 @@
                     <marker2>-1</marker2>
                 </item0>
             </measurements>
-            <name>Autosaved  @20:00:23</name>
+            <name>Autosaved  @20:43:14</name>
             <plotsOrder>8, 9, 10, 11, 12, 13, 14, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39</plotsOrder>
-            <sampleRate>16</sampleRate>
+            <sampleRate>13</sampleRate>
             <startMode>2</startMode>
             <trigMode>0</trigMode>
-            <trigPos>8192</trigPos>
+            <trigPos>8000</trigPos>
             <trigType>0</trigType>
             <triggerList>
                 <trigger0>
-                    <channel>11</channel>
-                    <type>3</type>
+                    <channel>9</channel>
+                    <type>2</type>
                 </trigger0>
-                <trigger1>
-                    <channel>14</channel>
-                    <type>3</type>
-                </trigger1>
-                <trigger2>
-                    <channel>13</channel>
-                    <type>3</type>
-                </trigger2>
             </triggerList>
-            <viewOptions>111111110000000000000</viewOptions>
+            <viewOptions>000001111100000000100</viewOptions>
         </preset1>
     </presetList>
 </logicAnalyzer>
