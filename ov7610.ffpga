@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="03.07.2023 19:17" projectChecksumState="1" projectChecksum="1f6e51b3">
+<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="04.07.2023 15:34" projectChecksumState="1" projectChecksum="0f5dc45a">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="FFPGA" partNumber="61" package="26">
         <nvmData registerLenght="352">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</nvmData>
@@ -443,7 +443,7 @@
                                     </commands>
                                     <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
                                         <levels>(8.680000e-06|4,0); (3.472000e-05|4,1); (3.472000e-05|4,0); (8.680000e-06|4,1); (4.340000e-05|4,0); (4.340000e-05|4,1); (8.680000e-06|4,0); (7.812000e-05|4,1); (8.680000e-06|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (8.680000e-06|4,1)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="4.000000e+03|6" pauseState="0" prestartState="1" outputState="12" prestartDelay="0.000000e+00|6" endState="1" link="1" sync="0"/>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="1" outputState="12" prestartDelay="0.000000e+00|6" endState="1" link="1" sync="0"/>
                                     </logicSequenceGenerator>
                                 </ParametricGenerator>
                             </GeneratorOpt>
@@ -471,11 +471,11 @@
                             <GeneratorOpt GenType="11">
                                 <ParametricGenerator>
                                     <commands>
-                                        <command type="Raw" data="(1.000000e+00|5,1); (2.000000e+00|5,1)"/>
+                                        <command type="Raw" data="(2.000000e+02|6,1); (2.000000e+02|6,0)"/>
                                     </commands>
                                     <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
-                                        <levels>(3.000000e-03|4,1)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="4.000000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="1.000000e+03|6" endState="1" link="1" sync="0"/>
+                                        <levels>(2.000000e-04|4,1); (2.000000e-04|4,0)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="8.000000e+02|6" endState="1" link="1" sync="0"/>
                                     </logicSequenceGenerator>
                                 </ParametricGenerator>
                             </GeneratorOpt>
@@ -486,11 +486,10 @@
                                 <ParametricGenerator>
                                     <commands>
                                         <command type="Raw" data="(5.000000e+01|6,1); (1.000000e+00|5,0)"/>
-                                        <command type="Raw" data="(5.000000e+01|6,1); (1.000000e+00|5,0)"/>
                                     </commands>
                                     <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
-                                        <levels>(5.000000e-05|4,1); (1.000000e-03|4,0); (5.000000e-05|4,1); (1.000000e-03|4,0)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="4.000000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="1.000000e+03|6" endState="1" link="1" sync="0"/>
+                                        <levels>(5.000000e-05|4,1); (1.000000e-03|4,0)</levels>
+                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="8.500000e+02|6" endState="1" link="1" sync="0"/>
                                     </logicSequenceGenerator>
                                 </ParametricGenerator>
                             </GeneratorOpt>
@@ -535,7 +534,7 @@
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="81" GlobalLink="0"/>
                             <GeneratorOpt GenType="5">
                                 <constantVoltageGenerator v="1.400000e+00|4">
-                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="4.000000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
                         </TPC>
@@ -543,7 +542,7 @@
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="0"/>
                             <GeneratorOpt GenType="5">
                                 <constantVoltageGenerator v="2.800000e+00|4">
-                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="4.000000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
+                                    <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
                         </TPC>
@@ -808,15 +807,15 @@
             <openedTab>Floorplan</openedTab>
             <openedTab>sampleClkGen</openedTab>
             <openedTab>uart_rxtx</openedTab>
-        </openedTabs>
-        <openedTabs>
+            <openedTab>i2c_reciever</openedTab>
             <openedTab>i2c_master</openedTab>
         </openedTabs>
         <custom-modules>
-            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="43375">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</hdl-module>
+            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="2936">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</hdl-module>
             <hdl-module name="input_reset_buf" module-type="0" module-id="1" compressed="0" checksum="34157">AAABYHjajZDLCsMgEEX3fsV0l0AhZJ0W+ifW6FQkRsUHoX9fH31mVRc63rnHuXiNasXAmUYYTYABRhcIWa1IWVHGpUg9Box0TreOQJOgLkW5Xo61HIZXh2vLFxB2ZcpAUNIwvaec9XvK2Q091EEfyKZYeh4lWOrDky/Qu/Pj7yeS92L3ZUa9Mb2xe4BL52xAIbGF7mFGqQwp71UvnM4t2JQ1NOI/tKXK6MF/swAkH+0LyQMdV2zj</hdl-module>
             <hdl-module name="sampleClkGen" module-type="0" module-id="2" compressed="0" checksum="48544">AAACRnjafZJfa4MwFMWfm09xxx6qzGFtaWFzhUEHcw99G/RhjJHWOyfGREykrA/77MsfFedK82CO58ZzfgHDEDaNVKKErUgbhoSUdgdJy4rhhhXPyOHaI6BXRWtaosIadi9PrwmsIVoR381yXjUKjnmNcGBFMPaQ/7N4jRJVQCbOe7OZt9H97B1SquhHzgMIw7lpmW+TUwCrhdbLu0WRnMhENMp8VWNmUTUo8WNCzPsw6SAaroH1hLIj/Zbw6FVCYppZTF8z7THLuWP7BO/KUfnWGA7NasPgYQ3Tr1nc+y2A8aPpvh8gT61CJvFsninsM7tL+6NDo+JO3kAUD850XV3f5ZA/9KMb/LT6fLpT7kn05v6WX0zdnNU=</hdl-module>
-            <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="58920">AABoMXja7V1tb9NIEP6Mf8Wik7gGQhOnlHLJRSLX5o4KWlAaqR9QtecmbrAusavYoVch7rff2o7tfZndtV2nTcEWULBnZmfGM8/Mru2l1UKHKz/wFujEm67mtmH8HTgL259YcxuZro9ayLz2jVblBxGJDr3FteXedhG6ubnZnTjLycoJpra7O/EW4fWhO3Nc21520WAZOC469q3ZF2/uWG54NTus8KqTXnw7W1jOPBESDbS0rcBGR+SPLmqbrU6b/OqYqL3ffXXQ7XTQp5OQLHYBOrUWhMzpTPDC8gN7GV4a2V8d3/Fc1N5tm+gl+tMhhLHY6Sa8s4hVyZRAv+wYoa3X1pKoF544GowH+Pz4aPwu9kIfvWlyJKPhX8dn4+EoIQNIBkdHo+HZWSqojw6MRjyU416vAvLzxlnaSHFM5t7kn2YhlqXt2wF2izHZrnU5t4sOZE3xzdIJJHyfMy++NLvti4Rv4fkOnlqBJWFjPZuyLu2ZE94tbE2nxEZfws04PRt3SoJsYmt4zX1KzeyYOl+dqb1sGhGXtwoiNqIPUprp+B5lJs8mOy5X/i0Z6Qmt3JP4sP8l5rvWHPv20iE/QuHYaRpPWq0c1FEoEXLEqKMNDGDM5p0kUCF9FyWwZ1egR2Ep08uZ0egZhuX7zswN/0nSWqIfIUOt58enZ+PB6XgwPv54isbDk08fBuOhwaDPbhZCO28azV02A6JTTFjvHDQaRqJRJgk7rh/sGLS6u5GVohk7jSZLt0YNLV0MFHnkJeCgpkvBQCuPzX4ZHZvncnnrnIbs4BRM0lijYJi3CHY050EgWEBPQ/Ea0qVkJA6ftwwjuL22p/YVwfDVwvgWXT3Dx0cfhqI2ffK73VyTkLAcjUESMyE5Hx2PhziMPXzOknQSksN3w8P3eHD4XpCyx0ohQR1JokleJSQktgFtQpJ9QJcRS/I6kzI4CscRpRykRg9Pj/AppO4bhuRs/PGTQPKbaFGYuYzr2rDV+OTsj5TGhOUwNB3eqOQqNdYeozJvVEzzyviO/ID0UjiMEwJJ2T9ghIuu97RkOCfdtecHeWkxTawrlHRa9Iy5N3MmCmrMkqfFm8HVrHr71ld7ilkwyQaRcWGYLR1M0tnEXDzCUcNJ+LCMUdeaxHwp9FIjSRiwwJEOYYItE7peehOiC554K5foRg0hYcACRzrEAcxx6QSAeAkxZqhzxhbrHF1osY6RHXGIF5IvsugGmZN+AFuTf1zvZm5PZ3aOQUqwJOGXVPocfpVyaHpvKI5gBixw6JRKGAKHBhJpKqQNQQ4PhU2BnozpGqM+FMdtVm7WdS/L8iY9qqSRiOsDC4sSjrT96fO5oRyDtMAJ038qRRWjrkUwMiA/Gdb8xrr10dvn6JLAoWtkJQrugtZFhqs6AhldkCCUYmh5AONxhxfOQBKYhBSxmJ9sNIomUoEKpivtDSEv0/BFsP/iyIYSjqYSclFRthhF+Iomra6MAXzhhUoXEsymqhoP50LU0LEvtBUw8Tq1QCQXIo3JrWh2d4V2eAf3+4ljG1S0y+5F1PP3DAjtmEYxJrHdafxz7ts5hfOnXySyVMO1s+FSO6M8e9pfT16ePUPpiWySQZ9N233oZNgu8+6RAkhuH+gk5DKLA4qnfRM825GoD2BoUf3lIngDJhaREZuQTTxjU7qcbB0+UkGoQ0aeVIGLglQ5ZvGkCkDkoVDgAbALRi2kmhusR/vGrU6av162v4PsIIxxAAb1pcK0ECaFYMzssQsYYUjHIdMAAoCvu/1sqaFnKOZ7a0J6wQGgp24uYEUS9/zf1+ND8UrDawhRMpPiNOCCu2FALVm7K5GhyhHAGsgS+jC14wD3H0iDPKp1iqnW6SKdbkDyR4swxXXbK6bbnl43IBlK+k3FAjSnUMdZ5M5CEMOuVVzkdxY5F0Z9zgyjE3drEk1yI83eg+dmqzX5YhOlrrxl/IyPNDBLO5h8cdyZlClCXnAyRzpCs6EZskR+q0xU5H716SVBC/r0y3I3tjh6qK0L7xGtFrkz7Xx3RpwayCdEworgBVekIbW4J9ZhzLzOo5qqUtPL2z1D/YR5qr4uNqtlldEror4VHDL32eccaul8qGqKmsorOT3CFwNpIaA0iwKmjE4FC93d60rq9rqobG1RAWZnGkDf1lq0VruQs6K8yw3zEl+Z1aZj5T1xaLig+qYDRNLliitlRdC8SJ9dCTrHw/fTZZOK7vRGUVcs7jX81vD7eKYCj38iwIBW8Sa34HTi4KJYV5ujsy25AqWC7FxN+AY6aqR2HuWbFwcV9tUb763ZgKoRvkb4GuHvAeFDPuqhE8VGAuyji87D09pFkFAK9ZlCodWcvHUmeSmxV0SipOakD6k+m/sXeoG65aKCS0ZFLK7W2oMKjM2/dhZH0IhEl1HeHeuXcXtGWR+Yd1sKLLiGJlsEK9hlPGSHka+7eDyrdiKEbFt3wfd2dXdRdxc/xvzxLpOn6spkVeXx/maeG584Zkb/ADPGMALqGWON6TWmP25MTz92Kwfn7Z8bvSvtyDeO3ut53U/3HmRxVCtYUcqD3T0Bj+xLGAoH1DN+2TcyfHMYf56rciz0Zkr8dVWJkn2PTU9sWd3y1C1P3fLc0yJ52eVt1cpm9nFQ+eXN9oO86Qhb8mBW1G9JbtF6Kx3XdYmqS9S9lKicM7NWy7cW13MbRannuSj44vho6fjE2SjygneF/MlcPnb6ITO3cLYeG94Wq1jtrKyG0oK29ZWiIhUEhvlkv5neAz/H20oQrgG4BuBtmCNsCHhJV7SNwLvN67UUaJ7qUfMRQ2Bq4mPGwPoNgR8INoshRQmkrXRNNvczmVIfnBd6qFIRGPxUX+5V5OYaC2osKLAZxIMU+RCe6olOnaXblKU5O7Y7Z6nuW867pFhCF+1SkGxquENwILqLURTQARB/SxBt3S3sFiZ55Pt7X9Re9nQXpJUseoW0VHzJ5nocmWRnL55Mss0hTybZ0Ysnk+xYCEsTdxSXDMpvUA6Sifud82SShVaYTHBJuUEl+xIK9xTeW40mU+09pwhIvsipAhJDVVEVlRjcmVMXpFjYnlMXrxjeo1MXv5jbqFMXyBjerVMX2BjcjFMX51i+s6Yu9rFqM09dcGJwb05dgmBxz01dssA7CagSAss3IFAlCM62TI2SJMmUEOrj/5Lmf3H6gAU=</hdl-module>
+            <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="18301">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</hdl-module>
+            <hdl-module name="i2c_reciever" module-type="0" module-id="4" compressed="0" checksum="48685">AAAQY3jatVhbb9s2FH7Xrzh56RzAgON2W4G4AebWQhCgSYDG2x6GQqAk2tFKiZ5IJTOK/vceXiyKujjavBlIZJ3rd3huTGYz+FAJyXO45WnFaBDk+gnZ6yQqaUKzJ1pOAoCs2FUS7CeLEvZlCu4zm1mBhPHkC4hsWxDW1SqF7NUqqaByUItxkk49LUXpiP/x9vLiM4qnRJJpjxNFh7gSqMEradxuUUDRMVSS7qe1xhyyDWgaSA6CFql64pk4ZeMu3ksapTSutk55Fb7/9dqKOXkbDR4rmpPTNkNIdJdHvAjOF8gLtCUhiaQKsNzvaEo3QIsqV7yvgdK5WX0MG8d5BRdTTf9wf3u7vFs5+tzQHz4ufwuj5Wr1KXx4UPTXhl5TDvJvDH21XC89+z9aO6Ezruk/Gfrvy5v1zd119LBerkNF/xnJ30wUkQrBRZbzkkLC85wUqYCEFBBTIGlK0zRACawiwnakJDm8D69v7tDkp3B5q0JZ+GyE4jEDY1/SfMdLUu5VkjMhaakTSZ4o2KpOdeJRWlWBSWapa6cBkmRFrS/Ak7XYFx5RMHQQYRhY0MJn9RIP7g4ONyKHJ1JmJGY67e7kEJt+meKXgv4t1fOZZDIrtvp9YeOOq82Glhicq3lkEPZM9gJ+mey4oOmWmgY+xzPfZoX2j+U+0f3ZJII9EXh3BT88XhikqhcoE9SqqFYc0skiFyCqBYffdXGXCr+J8jSU2oRyqVqihXNAsrTn5oOr0SWPpEAI47EZe3B18GEsJwQRTCzp3KJQIC89XDB4mg3TCNp29qJmGuT+N/uwsl1HE1u7cKbTCq9ewdnLrr3mXngizUJUot6cGYXV0+g7Gq+zBoE3TdphLHjeGDQ52UPB1eT/q8pwAhHG4E2jxQWHP6t8BykyJdsDL8ywa9g0GbUWzxsM8EbV1OO4KXXZOWILVPsx1SkeecVSDRSn4oYzxp+xpeO9n4SWDZcqZWrhcW1puw8uE1Ix2Y9mRNL7E99JuZ9s+6ZP0JHG1MeRynipJk4tZrUER9WwEuwDqKfhCHSn1sBQ/o9A9kz9u4nUXkNjmj3sTiVn0E1wp2qLxs1oPaA5juLuetfHjS8xKqSqgeUjDoCqLPHWdfqqOYzO5kYEf++3eP3Uzlpt3kM1I64Zhztji1zfGD1679rr3UKDG8KLsmzscPNxV15QAo2LUD1cWpHMm8yBaFqTe+SU7Z9frZOZH5tHnteXB3X/oR8ddUEft/5ydPP1VNbRfCC/cwU9LSm9mAfR/gOc/y/Cvlnsmu4lbG3ufwhsNjuD9f3q/hKyfMdorocSSqp7sIb3lBH7d2a7UMK+TvW9zz3v4Fb+4LofHDoG7IjgmlXu7tH4k9t/KHwHGA06Ow==</hdl-module>
             <hdl-module name="main_tb" module-type="1" module-id="1" compressed="0" checksum="15343">AAAK9XjatVZtb9s2EP6uX3FoC1TCslrymjSbGmBO46xGkyZw3BZbUXC0RClE9QaJTtIv++07Um+kaCxFgQmw5Ds+eu5OfHgk/C14zpqIZgyCopkFVeM4kJfxDh055QURW3C90AGoaE1zJlgNq/fkzcU78vYv6K8TeDknvu/Ln4k9W2wW5Hy9uFyO2ONweBFmMyh2+RaRZQIxFRS2XDRgcJwuPpyR9WKz1OIFweEcY/UcoqZFk3MheJFCUzEWmxRXH5frm8Xl9cXq/R/k8upsKSmOQj0NjIs5JA3DB2Zzx+qMVibLzebqmpyuNqAnYhaTsSIVt7KYRpSVIjUoLm5OwbwsilgCc14waFjNadZ+FlVhggzBCVwiiSgVl5nf8oK8WfwneVTmeVlARMVtGTOArMS5Vwwg5/R6uV5dneFrczWPzmMAbRS/yzh6fNQKgReCpZgZD1FWULMUOImyr+FgVGU9GvWD/H/PawZlE5FI1Blhhe1DfbLBWz+QcrRKgqVpVrkThE7s7cSOJnY8sdnETiZ2qorb0VoQUZJXDdby1JXfDuCFvVZcy+UdtFh7rbiWyzvoiO1F4VquAWzL37VcA9hWuWu5BrCtZ9dy9fXZ8nQtl4dQD+KdALd9SellfMEwe2IlIx2jmSOmfgAdo5k9RhOdxBimhZEi1DDS7DFKkmMswxx4pFBHjGGOGCXfEaOZwwx0mjZB231EkYmJ9mFiExPvwzATw/ZhEhOT7MOkJibVFKBWFM3u6bcG19LYeGZzr+0g2GP+6VqJ0+4AtPkqv4h6flisN+TTerVZktM/N8tQReVFhbL6PC6pn4Pf/C+qu4bIIJ+fX6GnAw+NS5pblvLCaRNU0nmNnfX51g8731N3bH+eZJMNsB8LfLVTzWa/ohMbt5A9nWX0G3SIBOXqciwJYRxea5sm2ifo+gkCz+nVoeei56MK4F9CbchKq4urZQfAitiZcmFtwUBksUxJWga8y4/vqLbPhdy5xlSfxbu8SjieKtwn3bnixV0UP/HCcfiO1g24/kF/8OjG+vn2e1Oubs2UC1nuc874sdXf392qbFicspbBm6rCPX5+6weemhncxTJ5dFDquee4g9M63eWsEOB355qg5T/yhwB9Jn1obeh/j/09Aea/fEeAQAYIfizAy8PHAwSyguAHKzg/fzRAgBeRtzbA4cD/LEEVNrdhq0xUJd7bg+2/MDvS8g==</hdl-module>
         </custom-modules>
         <ip-modules>
@@ -930,7 +929,7 @@
                     <port-name>o_rx_oe</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:7]_out0">
-                    <port-name>o_rx_done</port-name>
+                    <port-name>rx_done_o</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:8]_out0">
                     <port-name>SAMP_CLK</port-name>
@@ -981,7 +980,7 @@
                     <port-name>MISC_EN_OE</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:4]_out0">
-                    <port-name>dbg</port-name>
+                    <port-name>dbg1</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:5]_out0">
                     <port-name>bus_o[7]</port-name>
@@ -1226,7 +1225,7 @@
                     <marker2>-1</marker2>
                 </item0>
             </measurements>
-            <name>Autosaved  @19:17:26</name>
+            <name>Autosaved  @15:34:28</name>
             <plotsOrder>8, 9, 10, 11, 12, 13, 14, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39</plotsOrder>
             <protocolAnalyzers>
                 <analyzer0>
@@ -1237,8 +1236,32 @@
                     <type>i2c</type>
                     <userLabel>test</userLabel>
                 </analyzer0>
+                <analyzer1>
+                    <settings>
+                        <baudRate>115200</baudRate>
+                        <bitOrder>1</bitOrder>
+                        <parityType>0</parityType>
+                        <rxTxChId>9</rxTxChId>
+                        <stopBit>1</stopBit>
+                        <wordSize>8</wordSize>
+                    </settings>
+                    <type>uart</type>
+                    <userLabel>RX</userLabel>
+                </analyzer1>
+                <analyzer2>
+                    <settings>
+                        <baudRate>115200</baudRate>
+                        <bitOrder>1</bitOrder>
+                        <parityType>0</parityType>
+                        <rxTxChId>12</rxTxChId>
+                        <stopBit>1</stopBit>
+                        <wordSize>8</wordSize>
+                    </settings>
+                    <type>uart</type>
+                    <userLabel>TX</userLabel>
+                </analyzer2>
             </protocolAnalyzers>
-            <sampleRate>12</sampleRate>
+            <sampleRate>10</sampleRate>
             <startMode>2</startMode>
             <trigMode>0</trigMode>
             <trigPos>8000</trigPos>
@@ -1249,7 +1272,7 @@
                     <type>1</type>
                 </trigger0>
             </triggerList>
-            <viewOptions>000001111111111111100</viewOptions>
+            <viewOptions>111111111111111111100</viewOptions>
         </preset1>
     </presetList>
 </logicAnalyzer>
