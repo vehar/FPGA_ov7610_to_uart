@@ -1,0 +1,82 @@
+12,80,//reset all register to default values
+12,04,//set output format to RGB
+15,20,//pclk will not toggle during horizontal blank
+40,d0,//RGB565
+// These are values scalped from https://github.com/jonlwowski012/OV7670_NEXYS4_Verilog/blob/master/ov7670_registers_verilog.v
+12,04,// COM7 set RGB color output
+11,80,// CLKRC internal PLL matches input clock
+0C,00,// COM3 default settings
+3E,00,// COM14 no scaling normal pclock
+04,00,// COM1 disable CCIR656
+40,d0,//COM15 RGB565 full output range
+3a,04,//TSLB set correct output data sequence (magic)
+14,18,//COM9 MAX AGC value x4 0001_1000
+4F,B3,//MTX1 all of these are magical matrix coefficients
+50,B3,//MTX2
+51,00,//MTX3
+52,3d,//MTX4
+53,A7,//MTX5
+54,E4,//MTX6
+58,9E,//MTXS
+3D,C0,//COM13 sets gamma enable does not preserve reserved bits may be wrong?
+# 17,14,//HSTART start high 8 bits
+# 18,02,//HSTOP stop high 8 bits //these kill the odd colored line
+# 32,80,//HREF edge offset
+# 19,03,//VSTART start high 8 bits
+# 1A,7B,//VSTOP stop high 8 bits
+# 03,0A,//VREF vsync edge offset
+# 0F,41,//COM6 reset timings
+# 1E,00,//MVFP disable mirror / flip //might have magic value of 03
+# 33,0B,//CHLF //magic value from the internet
+# 3C,78,//COM12 no HREF when VSYNC low
+# 69,00,//GFIX fix gain control
+# 74,00,//REG74 Digital gain control
+# B0,84,//RSVD magic value from the internet *required* for good color
+# B1,0c,//ABLC1
+# B2,0e,//RSVD more magic internet values
+# B3,80,//THL_ST
+# //begin mystery scaling numbers
+# 70,3a,
+# 71,35,
+# 72,11,
+# 73,f0,
+# a2,02,
+# //gamma curve values
+# 7a,20,
+# 7b,10,
+# 7c,1e,
+# 7d,35,
+# 7e,5a,
+# 7f,69,
+# 80,76,
+# 81,80,
+# 82,88,
+# 83,8f,
+# 84,96,
+# 85,a3,
+# 86,af,
+# 87,c4,
+# 88,d7,
+# 89,e8,
+# //AGC and AEC
+# 13,e0,//COM8 disable AGC / AEC
+# 00,00,//set gain reg to 0 for AGC
+# 10,00,//set ARCJ reg to 0
+# 0d,40,//magic reserved bit for COM4
+# 14,18,//COM9 4x gain + magic bit
+# a5,05,// BD50MAX
+# ab,07,//DB60MAX
+# 24,95,//AGC upper limit
+# 25,33,//AGC lower limit
+# 26,e3,//AGC/AEC fast mode op region
+# 9f,78,//HAECC1
+# a0,68,//HAECC2
+# a1,03,//magic
+# a6,d8,//HAECC3
+# a7,d8,//HAECC4
+# a8,f0,//HAECC5
+# a9,90,//HAECC6
+# aa,94,//HAECC7
+# 13,e5,//COM8 enable AGC / AEC
+# 1E,23,//Mirror Image
+# 69,06,//gain of RGB(manually adjusted)

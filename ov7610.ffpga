@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="04.07.2023 15:34" projectChecksumState="1" projectChecksum="0f5dc45a">
+<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="7/7/23 6:53 PM" projectChecksumState="1" projectChecksum="abb37f4c">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="FFPGA" partNumber="61" package="26">
         <nvmData registerLenght="352">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</nvmData>
@@ -26,19 +26,19 @@
         </item>
         <item id="5" caption="GPIO1 (PIN 14)">
             <graphics pos="(150.00,546.48)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-25.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_RX_DONE</textLabel>
+            <textLabel pos="(4.59,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">pclk</textLabel>
         </item>
         <item id="6" caption="GPIO2 (PIN 15)">
             <graphics pos="(35.00,498.41)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-10.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">SAMP_CLK</textLabel>
+            <textLabel pos="(6.10,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">href</textLabel>
         </item>
         <item id="7" caption="GPIO3 (PIN 16)">
             <graphics pos="(150.00,450.33)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-6.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_TX</textLabel>
+            <textLabel pos="(-7.53,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">samp_clk</textLabel>
         </item>
         <item id="8" caption="GPIO4 (PIN 17)">
             <graphics pos="(35.00,402.25)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-24.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">UART_TX_DONE</textLabel>
+            <textLabel pos="(9.95,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">tx</textLabel>
         </item>
         <item id="9" caption="GPIO5 (PIN 18)">
             <graphics pos="(35.00,192.92)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -50,15 +50,15 @@
         </item>
         <item id="11" caption="GPIO7 (PIN 20)">
             <graphics pos="(35.00,97.76)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-2.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">i2c_WR</textLabel>
+            <textLabel pos="(-12.33,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">cmos_rst_n</textLabel>
         </item>
         <item id="12" caption="GPIO8 (PIN 23)">
             <graphics pos="(1094.00,50.02)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-0.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">i2c_EN</textLabel>
+            <textLabel pos="(2.60,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">pwdn</textLabel>
         </item>
         <item id="13" caption="GPIO9 (PIN 24)">
             <graphics pos="(1200.00,102.11)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-5.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">DEBUG2</textLabel>
+            <textLabel pos="(6.25,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">xclk</textLabel>
         </item>
         <item id="14" caption="GPIO10 (PIN 1)">
             <graphics pos="(1094.00,155.19)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -80,7 +80,7 @@
         </item>
         <item id="20" caption="GPIO18 (PIN 9/GrP0)">
             <graphics pos="(1094.00,606.58)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
-            <textLabel pos="(-2.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">DEBUG</textLabel>
+            <textLabel pos="(1.54,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">vsync</textLabel>
         </item>
         <item id="21" caption="GPIO17 (PIN 8/GrP1)">
             <graphics pos="(1200.00,554.50)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -434,19 +434,8 @@
                     <PowerSwitch internalPower="1" externalPower="0"/>
                     <ExpansionConnector>9:0;10:0;11:0;12:0;13:0;14:0;15:0;27:0;28:0;29:0;30:0;31:0;32:0;33:0;34:0;35:0;36:0;37:0;38:0;39:0;40:0;1021:0;1022:0;1023:0</ExpansionConnector>
                     <TestPoints>
-                        <TPC ID="9" Type="14">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
-                            <GeneratorOpt GenType="11">
-                                <ParametricGenerator>
-                                    <commands>
-                                        <command type="UART" freq="115200" data="ff0ff33" parity="0" ordering="0" endBitSize="1" frameSize="8"/>
-                                    </commands>
-                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
-                                        <levels>(8.680000e-06|4,0); (3.472000e-05|4,1); (3.472000e-05|4,0); (8.680000e-06|4,1); (4.340000e-05|4,0); (4.340000e-05|4,1); (8.680000e-06|4,0); (7.812000e-05|4,1); (8.680000e-06|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (1.736000e-05|4,1); (1.736000e-05|4,0); (8.680000e-06|4,1)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="1" outputState="12" prestartDelay="0.000000e+00|6" endState="1" link="1" sync="0"/>
-                                    </logicSequenceGenerator>
-                                </ParametricGenerator>
-                            </GeneratorOpt>
+                        <TPC ID="9" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="69" GlobalLink="1"/>
                         </TPC>
                         <TPC ID="10" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="82" GlobalLink="1"/>
@@ -466,33 +455,11 @@
                         <TPC ID="15" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="79" GlobalLink="1"/>
                         </TPC>
-                        <TPC ID="27" Type="14">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
-                            <GeneratorOpt GenType="11">
-                                <ParametricGenerator>
-                                    <commands>
-                                        <command type="Raw" data="(2.000000e+02|6,1); (2.000000e+02|6,0)"/>
-                                    </commands>
-                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
-                                        <levels>(2.000000e-04|4,1); (2.000000e-04|4,0)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="8.000000e+02|6" endState="1" link="1" sync="0"/>
-                                    </logicSequenceGenerator>
-                                </ParametricGenerator>
-                            </GeneratorOpt>
+                        <TPC ID="27" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="80" GlobalLink="1"/>
                         </TPC>
-                        <TPC ID="28" Type="14">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
-                            <GeneratorOpt GenType="11">
-                                <ParametricGenerator>
-                                    <commands>
-                                        <command type="Raw" data="(5.000000e+01|6,1); (1.000000e+00|5,0)"/>
-                                    </commands>
-                                    <logicSequenceGenerator mode="0" localRepeat="1" localPauseState="0" localEndState="0">
-                                        <levels>(5.000000e-05|4,1); (1.000000e-03|4,0)</levels>
-                                        <abstractGenerator repeat="1" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="0" outputState="12" prestartDelay="8.500000e+02|6" endState="1" link="1" sync="0"/>
-                                    </logicSequenceGenerator>
-                                </ParametricGenerator>
-                            </GeneratorOpt>
+                        <TPC ID="28" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="65" GlobalLink="1"/>
                         </TPC>
                         <TPC ID="29" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="83" GlobalLink="1"/>
@@ -541,7 +508,7 @@
                         <TPC ID="1022" Type="12">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="0"/>
                             <GeneratorOpt GenType="5">
-                                <constantVoltageGenerator v="2.800000e+00|4">
+                                <constantVoltageGenerator v="2.100000e+00|4">
                                     <abstractGenerator repeat="0" repeatCount="2" shownPeriod="0" startPoint="0.000000e+00|6" stopPoint="1.900000e+03|6" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+00|5" endState="0" link="0" sync="0"/>
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
@@ -551,7 +518,7 @@
                         </TPC>
                     </TestPoints>
                     <I2C slaveAddress="-1"/>
-                    <TestPointsOrder>1021;1022;9;27;28</TestPointsOrder>
+                    <TestPointsOrder>1021;1022</TestPointsOrder>
                 </SaveEmulator>
             </lastConfiguration>
             <savedConfigurations>
@@ -804,23 +771,27 @@
         <openedTabs>
             <openedTab>main</openedTab>
             <openedTab>I/O Planner</openedTab>
-            <openedTab>Floorplan</openedTab>
             <openedTab>sampleClkGen</openedTab>
             <openedTab>uart_rxtx</openedTab>
             <openedTab>i2c_reciever</openedTab>
             <openedTab>i2c_master</openedTab>
+            <openedTab>Timing Analysis</openedTab>
+            <openedTab>ov7670_controller</openedTab>
+            <openedTab>Resources Report</openedTab>
+            <openedTab>Floorplan</openedTab>
         </openedTabs>
         <custom-modules>
-            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="2936">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</hdl-module>
+            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="49352">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</hdl-module>
             <hdl-module name="input_reset_buf" module-type="0" module-id="1" compressed="0" checksum="34157">AAABYHjajZDLCsMgEEX3fsV0l0AhZJ0W+ifW6FQkRsUHoX9fH31mVRc63rnHuXiNasXAmUYYTYABRhcIWa1IWVHGpUg9Box0TreOQJOgLkW5Xo61HIZXh2vLFxB2ZcpAUNIwvaec9XvK2Q091EEfyKZYeh4lWOrDky/Qu/Pj7yeS92L3ZUa9Mb2xe4BL52xAIbGF7mFGqQwp71UvnM4t2JQ1NOI/tKXK6MF/swAkH+0LyQMdV2zj</hdl-module>
             <hdl-module name="sampleClkGen" module-type="0" module-id="2" compressed="0" checksum="48544">AAACRnjafZJfa4MwFMWfm09xxx6qzGFtaWFzhUEHcw99G/RhjJHWOyfGREykrA/77MsfFedK82CO58ZzfgHDEDaNVKKErUgbhoSUdgdJy4rhhhXPyOHaI6BXRWtaosIadi9PrwmsIVoR381yXjUKjnmNcGBFMPaQ/7N4jRJVQCbOe7OZt9H97B1SquhHzgMIw7lpmW+TUwCrhdbLu0WRnMhENMp8VWNmUTUo8WNCzPsw6SAaroH1hLIj/Zbw6FVCYppZTF8z7THLuWP7BO/KUfnWGA7NasPgYQ3Tr1nc+y2A8aPpvh8gT61CJvFsninsM7tL+6NDo+JO3kAUD850XV3f5ZA/9KMb/LT6fLpT7kn05v6WX0zdnNU=</hdl-module>
-            <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="18301">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</hdl-module>
-            <hdl-module name="i2c_reciever" module-type="0" module-id="4" compressed="0" checksum="48685">AAAQY3jatVhbb9s2FH7Xrzh56RzAgON2W4G4AebWQhCgSYDG2x6GQqAk2tFKiZ5IJTOK/vceXiyKujjavBlIZJ3rd3huTGYz+FAJyXO45WnFaBDk+gnZ6yQqaUKzJ1pOAoCs2FUS7CeLEvZlCu4zm1mBhPHkC4hsWxDW1SqF7NUqqaByUItxkk49LUXpiP/x9vLiM4qnRJJpjxNFh7gSqMEradxuUUDRMVSS7qe1xhyyDWgaSA6CFql64pk4ZeMu3ksapTSutk55Fb7/9dqKOXkbDR4rmpPTNkNIdJdHvAjOF8gLtCUhiaQKsNzvaEo3QIsqV7yvgdK5WX0MG8d5BRdTTf9wf3u7vFs5+tzQHz4ufwuj5Wr1KXx4UPTXhl5TDvJvDH21XC89+z9aO6Ezruk/Gfrvy5v1zd119LBerkNF/xnJ30wUkQrBRZbzkkLC85wUqYCEFBBTIGlK0zRACawiwnakJDm8D69v7tDkp3B5q0JZ+GyE4jEDY1/SfMdLUu5VkjMhaakTSZ4o2KpOdeJRWlWBSWapa6cBkmRFrS/Ak7XYFx5RMHQQYRhY0MJn9RIP7g4ONyKHJ1JmJGY67e7kEJt+meKXgv4t1fOZZDIrtvp9YeOOq82Glhicq3lkEPZM9gJ+mey4oOmWmgY+xzPfZoX2j+U+0f3ZJII9EXh3BT88XhikqhcoE9SqqFYc0skiFyCqBYffdXGXCr+J8jSU2oRyqVqihXNAsrTn5oOr0SWPpEAI47EZe3B18GEsJwQRTCzp3KJQIC89XDB4mg3TCNp29qJmGuT+N/uwsl1HE1u7cKbTCq9ewdnLrr3mXngizUJUot6cGYXV0+g7Gq+zBoE3TdphLHjeGDQ52UPB1eT/q8pwAhHG4E2jxQWHP6t8BykyJdsDL8ywa9g0GbUWzxsM8EbV1OO4KXXZOWILVPsx1SkeecVSDRSn4oYzxp+xpeO9n4SWDZcqZWrhcW1puw8uE1Ix2Y9mRNL7E99JuZ9s+6ZP0JHG1MeRynipJk4tZrUER9WwEuwDqKfhCHSn1sBQ/o9A9kz9u4nUXkNjmj3sTiVn0E1wp2qLxs1oPaA5juLuetfHjS8xKqSqgeUjDoCqLPHWdfqqOYzO5kYEf++3eP3Uzlpt3kM1I64Zhztji1zfGD1679rr3UKDG8KLsmzscPNxV15QAo2LUD1cWpHMm8yBaFqTe+SU7Z9frZOZH5tHnteXB3X/oR8ddUEft/5ydPP1VNbRfCC/cwU9LSm9mAfR/gOc/y/Cvlnsmu4lbG3ufwhsNjuD9f3q/hKyfMdorocSSqp7sIb3lBH7d2a7UMK+TvW9zz3v4Fb+4LofHDoG7IjgmlXu7tH4k9t/KHwHGA06Ow==</hdl-module>
+            <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="36793">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</hdl-module>
+            <hdl-module name="i2c_reciever" module-type="0" module-id="4" compressed="0" checksum="3312">AAARPnjatVhbb9s2FH7Xrzh9qlMYkN1uKxC3wNxaCAI0CdC420NRCJRFO1ol0ROppMaw/77Di0RRolyn6QS0ts7147nSCUN4X3PBCrhiaZ3TICjUJ2QvN3FFNzS7p9UkAMjKfS3APFm8yb9OwT5haAQ2Odt8BZ7tSpIPtSouvFoV5VSMauWMpFNHS1IG4p9fn8++oHhKBJl6nEg6JDUPkAKsFtrxDkUkBw9L0sO01ZlDtgVFA8GA0zKVnxiVrrp2mRwEjVOa1DurvorefbowYkErb06EoUWDYhpIUYfFBbosYlZKXtDzs2FFQco0ZtM+h+fknsYkTTGQ3MMf56ijs+Bsof0hci6IoBy/i8OepnQLtKwLyfsnkAgvVx+iTgrfwmyq6O9vrq6W1ytLn2v67YflH1G8XK0+Rre3kv5S01tKI/9K01fL9dKx/4uxE1njiv6rpv+5vFxfXl/Et+vlOpL035D8rz5FLI9gT1awijZB5LAhJSRUhoamaYASWLkk35OKFPAuuri8RpMfo+UVmnyezOYLVwLRdPnz2SIItBdBiz2rSHWQxZVxQStVQJggMP2UqqijtKw+nYZKVW0HKsnKVp+DI2tOsHCITgW4LC+xcdc43PIC7kmVkSRXybfxQ2zqZYpfSvpNyM8Hkoms3Kn3hTl3Um+3tMLD2W5DBskfyIHD75M94zTdUT06zjDyu6xU/rHNJmoydIlgIgJvMLp3M41U9iDNOTUqcgiM6WSxPSCqBc3/bYlXEr8+5dNQKhPSpWyMHs4RycrEzQXXotvckRIhnI5N24O3jQ9teUMQwcSQzgwKCfLcwQWj0eyYRtCmvxctUyN3v5kPIzt0NIFn3/fkdPTCEenWnRR1hstJ0BwNXyRcgF1VM9k5KzpTpCAHKJlcJH/XGY4XkufwqtO5nMFfdbGHFJkiPwAr9STr2NSJMhbPOgxw5tDU4dj5cz4IpQGq/Oii43eszlMFFEfeluU5e8BOTQ5usHs2bEqkqYXDNRVrH9wUpM6FH80JyfUneJBaN6nmTUXQkk6pgyMV8JNrVC60k0pTCj4Oz1OTPJbgIyAdUz82Sfrr45SujYbTxBq0k9eqmqqws1UNVoYjdLiW1dLAlwQVUtmh4g47vK4qvKM9fUWYxnY2Gbj7usfzUwfrUB7J3lwVK2mlmztmjxyG7Q3T4XhXlneDjE5356RVZ/8qoPjYazJIkc41xsr0zzPv9tbImdwRHb44daD6R1UvPvNjo8dZDd+fyf7QH51qL8LAx2+/HF1nnirr5kVH3MkLSgwuklbwx5LjxT2K+FFY/2+UvolsG9Hia1z38bX4W4GfCC4Mn8H6ZnVzDlmxz2mhhhVKynutgnifEfV7dVg0ka97Xe9zf3fZ36CeFh5UnJbyVJSTay3l4evfpk4gm3CAvXwMLx6j0Z49Mtp2iXQv6vivMH8r+Q80mndb</hdl-module>
+            <hdl-module name="ov7670_controller" module-type="0" module-id="5" compressed="0" checksum="15500">AAAJOHjahVZta9swEP48/Yr71CXQkThbO4hn2NqkZdB1o+0GZQwj23Iq5rdactMwtt8+vdmWHTs1hTr3nO71uZNRmkdVQiDEKSmxTzNOyhiHZIIAaFZUHNonTH4fw4C8ZNzPjpFAZjNjCGg+ZCDNmV9IM2PgQ0niUfCJ7bKwRX++X85/tWgUSCiveOekgnSAMAYX2+gA+mziNWDjNdhx4sd56Ve45EOuGckivyQ42iE0dVV1Lm6/AOOYE4hImOASc5pnTFaO7woSkRhIVqUylD9Imvi8ulpbVfBgfqzkP27vr8/9i/Xqcq3ljpaf3d+tHVt/0coXtvytlt+ur1f+3Vf/+6ebOyV/J8R/azKoSH0ZmStD3JOCzsV/FAdlpK4MXPyVZGM1Rz0FfSaJ/+gqr6BqEVRxTEoQFQScJLqnDMI8pdkG4jJPgT/UvDRGe49kku+4B8DFCChpNnpSgerklpakjyoS6rPj8MJOVLigTIwV5AWpOw4i5y3eMfg4KXJGog2R0zWFQOhmCNkpNKY/eFbGbf423gxYraJzsVXa1NtC7JmQ4lrFZGSpWCWwKtK3ocS1DqpR9RJiRiaGO1PQ6c66z5ksxBJuCC8peZKU+CYpBCvMsWbHuWLGrP8geKXnZmmKaQ2k9uhZ0+MCGhpYMyWvg7lr4c2r0EMI7KMdBct+N4jDDmg8MaX0PAHA0VFde/nbMeSAgYTU2LuihEofYjFPsmKKVinBGYOMbEXVRMWAMjFqeso6+fTfuv+Uh35FX0xHE1RFL7PRfG6S09xrUE3VTqpidihrMsljZcHKSG0ViAQlJjEVS17tZKnnnL4JKDf4zeXZyenJVGaOnzBNcCDuO8zNvkZDDW4WlmeuFneg6vbyHKMJkISRXmedkc6+wNSD3Wqd2lEt9ynTvbZk07qrebSzTkehS/0uDwcCBbDHRdxzuEr4sjmnLg9kjsjlgPZ8oNrcC6uzc23LXfSv+aU8oMaUbDxmjG6y9ivAm6uFYIvVt4OnskJInNPfS+g/INhfpQ==</hdl-module>
             <hdl-module name="main_tb" module-type="1" module-id="1" compressed="0" checksum="15343">AAAK9XjatVZtb9s2EP6uX3FoC1TCslrymjSbGmBO46xGkyZw3BZbUXC0RClE9QaJTtIv++07Um+kaCxFgQmw5Ds+eu5OfHgk/C14zpqIZgyCopkFVeM4kJfxDh055QURW3C90AGoaE1zJlgNq/fkzcU78vYv6K8TeDknvu/Ln4k9W2wW5Hy9uFyO2ONweBFmMyh2+RaRZQIxFRS2XDRgcJwuPpyR9WKz1OIFweEcY/UcoqZFk3MheJFCUzEWmxRXH5frm8Xl9cXq/R/k8upsKSmOQj0NjIs5JA3DB2Zzx+qMVibLzebqmpyuNqAnYhaTsSIVt7KYRpSVIjUoLm5OwbwsilgCc14waFjNadZ+FlVhggzBCVwiiSgVl5nf8oK8WfwneVTmeVlARMVtGTOArMS5Vwwg5/R6uV5dneFrczWPzmMAbRS/yzh6fNQKgReCpZgZD1FWULMUOImyr+FgVGU9GvWD/H/PawZlE5FI1Blhhe1DfbLBWz+QcrRKgqVpVrkThE7s7cSOJnY8sdnETiZ2qorb0VoQUZJXDdby1JXfDuCFvVZcy+UdtFh7rbiWyzvoiO1F4VquAWzL37VcA9hWuWu5BrCtZ9dy9fXZ8nQtl4dQD+KdALd9SellfMEwe2IlIx2jmSOmfgAdo5k9RhOdxBimhZEi1DDS7DFKkmMswxx4pFBHjGGOGCXfEaOZwwx0mjZB231EkYmJ9mFiExPvwzATw/ZhEhOT7MOkJibVFKBWFM3u6bcG19LYeGZzr+0g2GP+6VqJ0+4AtPkqv4h6flisN+TTerVZktM/N8tQReVFhbL6PC6pn4Pf/C+qu4bIIJ+fX6GnAw+NS5pblvLCaRNU0nmNnfX51g8731N3bH+eZJMNsB8LfLVTzWa/ohMbt5A9nWX0G3SIBOXqciwJYRxea5sm2ifo+gkCz+nVoeei56MK4F9CbchKq4urZQfAitiZcmFtwUBksUxJWga8y4/vqLbPhdy5xlSfxbu8SjieKtwn3bnixV0UP/HCcfiO1g24/kF/8OjG+vn2e1Oubs2UC1nuc874sdXf392qbFicspbBm6rCPX5+6weemhncxTJ5dFDquee4g9M63eWsEOB355qg5T/yhwB9Jn1obeh/j/09Aea/fEeAQAYIfizAy8PHAwSyguAHKzg/fzRAgBeRtzbA4cD/LEEVNrdhq0xUJd7bg+2/MDvS8g==</hdl-module>
         </custom-modules>
         <ip-modules>
             <hdl-module name="seven_segment_display" module-type="0" module-id="0" compressed="0" checksum="46390">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</hdl-module>
-            <hdl-module name="uart_rxtx" module-type="0" module-id="1" compressed="0" checksum="5840">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</hdl-module>
+            <hdl-module name="uart_rxtx" module-type="0" module-id="1" compressed="0" checksum="1669">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</hdl-module>
             <hdl-module name="seven_segment_display_tb" module-type="1" module-id="0" compressed="0" checksum="26835">AAAO2Hja7VdNc5tIEL3zK7qsHOQskcBJdjf2+oAlZFGRQAU4XlcqpR3BCI2CGApGUvmyv317BpDBji9bOUblguk3/fl6piUP32rvft5HG/H8sWDJRsCFcWHCmJGUJxDQHYt4Fu8jwQtNW9Bix8qS8QxYCRta0NUjJAXJBI11WBeUAl9DtCFFQnUQHEj2CDktSjTgK0FYxrIECEQYTGqKDbop+VocSUFROQZSljxiBP1BzKP9jmaCCBlvzVJaQl9sKJwFtcXZua5hkJiSFFgGcq/ZgiMTG74XUNBSFCySPnRUitJ9LHNotlO2Y3UEaa4YKGXm+xIrkHnqsOMxW8s3VWXl+1XKyo0OMZOuV3uBYCnBiGZopWEdQ15ASdNUemCYt6r1KTtd1YpRckmoqClScY8bvutWghSt90WGIamyiTlSpiJuaSQkItXXPE35UZYm+8VkReWlFuIOWfEDVaVU/c24wEyrDCT/+VNT661yQzD1Fa35wrDILmlVU8jopcC+4zGBnBcq3PMqB5oWTm0IvEl4b/k2OAEsfO+LM7bHcGYFKJ/pcO+EU+8uBNTwLTd8AG8ClvsAnx13rIP998K3gwA8H5z5YubYiDnuaHY3dtxbuEE71wth5sydEJ2GHsiAtSvHDqSzue2PpihaN87MCR90beKErvQ5QacWLCw/dEZ3M8uHxZ2/8AIbw4/Rreu4Ex+j2HPbDQcYFTGwv6AAwdSazVQo6w6z91V+I2/x4Du30xCm3mxsI3hjY2bWzcyuQmFRo5nlzHVtbM2tW1tZeejFV2pVdnA/tRWE8Sz8G4WO58oyRp4b+ijqWKUfnkzvncDWwfKdQBIy8b25DpJOtPCUE7Rz7cqLpBo6HUEVKd8FtnbKZWxbM/QVSOO28uCnjpsbUlKY83ifUnDJjl7idTnQbFnSZIn3Kl9GokiXF/FSrLSQ8xQOeEXwkF1qcDpflzBZ3FpofmAJwfkEB3NgaD49sEbT+DgwzYEaaIVhmPAOXHoEgSMBT3cWbXB0lCzJfmplb4ea9o9gO1pGBIsz8V4MwcxLTdtV5Z4KlcNNFZuSR6zzChMeDhekQDoELVDKmzUE9mw5suAazErLyfK9KHFZULzw6fereplyEjfrDEcfFY309dOl8Q1iIkiD0KxZFRRHd7lZRimPvlcBvL2oIxwZziAclUtleJJWHSnqSHFHoh1p3ZGSrl1+Er+aMl2Cc/tAkaOEYSG4x/CbJkE+2FVL2KqtH9IKvT5uQc0fLs8hxqlfgQMkDvr4wK8RJUv2oC+fDSL5gr58NkjFKvSrd4PSDPo0a6QOn9DviI2OYhT66tXGVhW2amNRhUVtLK6wuI3RCqNtbF1h6zaWVFjS8ZfXDvMGbZMP/bZ0LolUpJP0SB5L6F3IQ4jH8191FlVvmPpuWNGEZcrfm3i/y+W3eP/stRswOETx2fnVk/qBFGXf0F+9MlUSUAc3KkvVxZOkOniS6u6dZOzbad0zjc6+AofDJ6jWVvgax02fXRtXwP4yf8fnNfvNPG+VW6tspcpWqWyvt89VqvS+/nH54Rt6Zldd+L28AtfyeDdw76PRlGe2UNN4VrT8MOz8Fq5R8+P5Caw9//mt60Hqsld0P3V0aRZrzfsVgswnZs0f9aB38YvBVxg02ww+ob9Y/D8sGi9u+C8GX2Gwif1mzeT/GVKlJvblHEcycBoXnep7743uj4h2oN6HF3un6Rs3kfBR/TzS/gOcif0P</hdl-module>
             <hdl-module name="uart_rxtx_tb" module-type="1" module-id="2" compressed="0" checksum="33884">AAAML3jarVbfc9pGEH7XX7FjZ6ZyqoDkJpnUJDMVIIwmIFFJxHUzGSrQAZcIHXM6gf3Sv717Jwmh2A99MOPBt7vf7re/OKn7Wnvzch9twPaPnG62Aq7NawuGNE7ZBkKyoyuWJcVKMK5pM8J3NM8py4DmsCWcLB9hw+NMkMSANScE2BpW25hviAGCQZw9wp7wHB3YUsQ0o9kGYlghmUSKLYbJ2VocY04QnECc52xFY4wHCVsVO5KJWEi+NU1JDrrYErgIK4+LK0NDkoTEKdAMpK02wZGKLSsEcJILTlcyhoGgVVokMofanNIdrRiku+pALjMvcqxA5mnAjiV0Lf8TVda+WKY03xqQUBl6WQhU5lK5Ihl6aVhHl3HISZrKCBTzVrU22RmqVmTZy4aKqkWK97hlu3Yl2KJ1wTOkJMonYdgyxfidrITUSPiapSk7ytLkvKisKL/RIrTES3YgqpRyvhkTmGmZgez/vhlqZcq3Maa+JFW/kBa7G59VwyV7LnDuuCawZ1zR/VxlR9OisQOhP4ru7MABN4RZ4H9xh84QLuwQ5QsD7txo7M8jQERge9E9+COwvXv47HpDA5y/ZoEThuAH4E5nE9dBnesNJvOh691CH/08P4KJO3UjDBr5IAmrUK4TymBTJxiMUbT77sSN7g1t5EaejDnCoDbM7CByB/OJHcBsHsz80EH6IYb1XG8UIIszdbyog6yoA+cLChCO7clEUdlzzD5Q+Q382X3g3o4jGPuToYPKvoOZ2f2JU1JhUYOJ7U4NbWhP7VtHefkYJVCwMju4GztKhXw2/g0i1/dkGQPfiwIUDawyiE6ud27oGGAHbigbMgr8qQGynejhqyDo5zllFNlqaE0EIVKeh452ymXo2BOMFUrnc3DnRa+bfpwTmLKkSAl48Y7cQBFzsRBLLWIshQP+IHClbjQ4bdMNjGa3NoIPdBPjbQQHq2NqATnQGmm+61hWR11f3DQteAMeOYLACwB3OVtt8aLI6SZ70TpedzXtH0F3JF/FWIqV5V1rn2varixNFcUfxANW1sMUu91ZzLFcgfWhuK8FcAeTz4tR4Py5GP8Nn+Dttak+vRZoaEc2guypg5APbVvfng8XgR1Jk/X79c+u/hfcSHvqytEupv5Qwd63MWHkzxZ9N5KmtmUS9mtlt+tm+0LI7DnByyb90auOGV61RNTS1ybZN9aN+Q2wB0ks4tqOIl4g/ITnD2V0vxBV+CPFy08odXVcJCwjJ/kJA28YFIDXDqhIGc5HFQSy0zMncP0h1nSt+nRmxfob64f3so8IOM0RLnUUATqtgennEj6UFOJsWnpzrq3NvPTTsbY9HZb+RFVjT0PT61NtkUPT8esKxStI8GFXpY4zAx2/amA5ONDL/7UWa9XFQyOV45K68nRmkV1XBnk412P3Sz0eaj3HuPyhkSpv3vbmtXd1UEWoUcTpMX7M4RL0ZpDd6yu5iTixf9VCIkzE+Q+Y4+W+uAvw4bDo30dOT8Wmcn+fbk+9OhIgyAa3npbikmxopk64qQ/wEX8IvyzNXqW51JuNuTopreq3Kz9rvKt0+snsAf3YkKL0if5qXVWgNk1DJbP6Sr/1zgzPMgKQLNHavpimdbI/51W64Ldslmwavp+pJ3qTy6uk2O3luxfoF+eXWeewSi6qOApziDm+nplG68orJwbVbE5dqxbuTIMJS6lK97RsZ4h6zVC1Nd+Vuj/0PctJsiGSoOzkTxPXPyD6bZXn2VTans95jd41Xk3C1v91fwHSVhcq4svfzGe7o1hME16tqXxR7JVj1TT8Kp9E2n+QDWwk</hdl-module>
         </ip-modules>
@@ -830,7 +801,10 @@
                     <port-name>i_clk</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:10]_out0">
-                    <port-name>o_tx_done</port-name>
+                    <port-name>o_tx</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:10]_out1">
+                    <port-name>o_tx_oe</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:11]_out0">
                     <port-name>PLL_CTRL_CLK_SELECTION</port-name>
@@ -910,11 +884,8 @@
                 <record id="IOB_t[0:0]_xy[0:23]_out1">
                     <port-name>SDA_OE</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[0:24]_in0">
-                    <port-name>MISC_WR</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[0:24]_out1">
-                    <port-name>MISC_WR_OE</port-name>
+                <record id="IOB_t[0:0]_xy[0:24]_out0">
+                    <port-name>cmos_rst_n_o</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:25]_out0">
                     <port-name>OSC_CTRL_EN</port-name>
@@ -928,14 +899,17 @@
                 <record id="IOB_t[0:0]_xy[0:6]_out1">
                     <port-name>o_rx_oe</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[0:7]_out0">
-                    <port-name>rx_done_o</port-name>
+                <record id="IOB_t[0:0]_xy[0:7]_in0">
+                    <port-name>cmos_pclk_i</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[0:8]_out0">
-                    <port-name>SAMP_CLK</port-name>
+                <record id="IOB_t[0:0]_xy[0:8]_in0">
+                    <port-name>cmos_href_i</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:9]_out0">
-                    <port-name>o_tx</port-name>
+                    <port-name>SAMP_CLK</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:9]_out1">
+                    <port-name>SAMP_CLK_OE</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:11]_in0">
                     <port-name>i_por</port-name>
@@ -958,41 +932,38 @@
                 <record id="IOB_t[0:0]_xy[31:21]_out1">
                     <port-name>PLL_CTRL_REFDIV[5]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:22]_out0">
-                    <port-name>bus_o[3]</port-name>
+                <record id="IOB_t[0:0]_xy[31:22]_in0">
+                    <port-name>cmos_db_i[3]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:23]_out0">
-                    <port-name>bus_o[2]</port-name>
+                <record id="IOB_t[0:0]_xy[31:23]_in0">
+                    <port-name>cmos_db_i[2]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:24]_out0">
-                    <port-name>bus_o[1]</port-name>
+                <record id="IOB_t[0:0]_xy[31:24]_in0">
+                    <port-name>cmos_db_i[1]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:25]_out0">
-                    <port-name>bus_o[0]</port-name>
+                <record id="IOB_t[0:0]_xy[31:25]_in0">
+                    <port-name>cmos_db_i[0]</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:26]_out0">
-                    <port-name>dbg2</port-name>
+                    <port-name>cmos_xclk_o</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:27]_in0">
-                    <port-name>MISC_EN</port-name>
+                <record id="IOB_t[0:0]_xy[31:27]_out0">
+                    <port-name>cmos_pwdn_o</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:27]_out1">
-                    <port-name>MISC_EN_OE</port-name>
+                <record id="IOB_t[0:0]_xy[31:4]_in0">
+                    <port-name>cmos_vsync_i</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:4]_out0">
-                    <port-name>dbg1</port-name>
+                <record id="IOB_t[0:0]_xy[31:5]_in0">
+                    <port-name>cmos_db_i[7]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:5]_out0">
-                    <port-name>bus_o[7]</port-name>
+                <record id="IOB_t[0:0]_xy[31:6]_in0">
+                    <port-name>cmos_db_i[6]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:6]_out0">
-                    <port-name>bus_o[6]</port-name>
+                <record id="IOB_t[0:0]_xy[31:8]_in0">
+                    <port-name>cmos_db_i[5]</port-name>
                 </record>
-                <record id="IOB_t[0:0]_xy[31:8]_out0">
-                    <port-name>bus_o[5]</port-name>
-                </record>
-                <record id="IOB_t[0:0]_xy[31:9]_out0">
-                    <port-name>bus_o[4]</port-name>
+                <record id="IOB_t[0:0]_xy[31:9]_in0">
+                    <port-name>cmos_db_i[4]</port-name>
                 </record>
             </records>
         </io-spec-tool>
@@ -1201,31 +1172,16 @@
         </preset0>
         <preset1>
             <markers>
-                <marker0>
-                    <color>1</color>
-                    <index>1</index>
-                    <time>900000</time>
-                </marker0>
-                <marker1>
-                    <color>2</color>
-                    <index>2</index>
-                    <time>78120</time>
-                </marker1>
-                <marker2>
-                    <color>3</color>
-                    <index>3</index>
-                    <time>276000</time>
-                </marker2>
                 <trigTime>0</trigTime>
             </markers>
             <measurements>
                 <item0>
-                    <channel>-1</channel>
+                    <channel>8</channel>
                     <marker1>-1</marker1>
                     <marker2>-1</marker2>
                 </item0>
             </measurements>
-            <name>Autosaved  @15:34:28</name>
+            <name>Autosaved  @18:53:41</name>
             <plotsOrder>8, 9, 10, 11, 12, 13, 14, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39</plotsOrder>
             <protocolAnalyzers>
                 <analyzer0>
@@ -1253,7 +1209,7 @@
                         <baudRate>115200</baudRate>
                         <bitOrder>1</bitOrder>
                         <parityType>0</parityType>
-                        <rxTxChId>12</rxTxChId>
+                        <rxTxChId>13</rxTxChId>
                         <stopBit>1</stopBit>
                         <wordSize>8</wordSize>
                     </settings>
@@ -1261,15 +1217,15 @@
                     <userLabel>TX</userLabel>
                 </analyzer2>
             </protocolAnalyzers>
-            <sampleRate>10</sampleRate>
+            <sampleRate>16</sampleRate>
             <startMode>2</startMode>
-            <trigMode>0</trigMode>
+            <trigMode>1</trigMode>
             <trigPos>8000</trigPos>
             <trigType>0</trigType>
             <triggerList>
                 <trigger0>
-                    <channel>28</channel>
-                    <type>1</type>
+                    <channel>38</channel>
+                    <type>2</type>
                 </trigger0>
             </triggerList>
             <viewOptions>111111111111111111100</viewOptions>
