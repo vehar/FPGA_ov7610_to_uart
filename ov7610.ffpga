@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="7/7/23 6:53 PM" projectChecksumState="1" projectChecksum="abb37f4c">
+<GPDProject version="26" oldestCompatibleVersion="26" GPDVersion="6.37.001" lastChange="07.07.2023 23:44" projectChecksumState="1" projectChecksum="128bfa99">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="FFPGA" partNumber="61" package="26">
         <nvmData registerLenght="352">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</nvmData>
@@ -771,7 +771,6 @@
         <openedTabs>
             <openedTab>main</openedTab>
             <openedTab>I/O Planner</openedTab>
-            <openedTab>sampleClkGen</openedTab>
             <openedTab>uart_rxtx</openedTab>
             <openedTab>i2c_reciever</openedTab>
             <openedTab>i2c_master</openedTab>
@@ -781,12 +780,12 @@
             <openedTab>Floorplan</openedTab>
         </openedTabs>
         <custom-modules>
-            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="49352">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</hdl-module>
+            <hdl-module name="main" module-type="0" module-id="0" compressed="0" checksum="40498">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</hdl-module>
             <hdl-module name="input_reset_buf" module-type="0" module-id="1" compressed="0" checksum="34157">AAABYHjajZDLCsMgEEX3fsV0l0AhZJ0W+ifW6FQkRsUHoX9fH31mVRc63rnHuXiNasXAmUYYTYABRhcIWa1IWVHGpUg9Box0TreOQJOgLkW5Xo61HIZXh2vLFxB2ZcpAUNIwvaec9XvK2Q091EEfyKZYeh4lWOrDky/Qu/Pj7yeS92L3ZUa9Mb2xe4BL52xAIbGF7mFGqQwp71UvnM4t2JQ1NOI/tKXK6MF/swAkH+0LyQMdV2zj</hdl-module>
             <hdl-module name="sampleClkGen" module-type="0" module-id="2" compressed="0" checksum="48544">AAACRnjafZJfa4MwFMWfm09xxx6qzGFtaWFzhUEHcw99G/RhjJHWOyfGREykrA/77MsfFedK82CO58ZzfgHDEDaNVKKErUgbhoSUdgdJy4rhhhXPyOHaI6BXRWtaosIadi9PrwmsIVoR381yXjUKjnmNcGBFMPaQ/7N4jRJVQCbOe7OZt9H97B1SquhHzgMIw7lpmW+TUwCrhdbLu0WRnMhENMp8VWNmUTUo8WNCzPsw6SAaroH1hLIj/Zbw6FVCYppZTF8z7THLuWP7BO/KUfnWGA7NasPgYQ3Tr1nc+y2A8aPpvh8gT61CJvFsninsM7tL+6NDo+JO3kAUD850XV3f5ZA/9KMb/LT6fLpT7kn05v6WX0zdnNU=</hdl-module>
             <hdl-module name="i2c_master" module-type="0" module-id="3" compressed="0" checksum="36793">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</hdl-module>
             <hdl-module name="i2c_reciever" module-type="0" module-id="4" compressed="0" checksum="3312">AAARPnjatVhbb9s2FH7Xrzh9qlMYkN1uKxC3wNxaCAI0CdC420NRCJRFO1ol0ROppMaw/77Di0RRolyn6QS0ts7147nSCUN4X3PBCrhiaZ3TICjUJ2QvN3FFNzS7p9UkAMjKfS3APFm8yb9OwT5haAQ2Odt8BZ7tSpIPtSouvFoV5VSMauWMpFNHS1IG4p9fn8++oHhKBJl6nEg6JDUPkAKsFtrxDkUkBw9L0sO01ZlDtgVFA8GA0zKVnxiVrrp2mRwEjVOa1DurvorefbowYkErb06EoUWDYhpIUYfFBbosYlZKXtDzs2FFQco0ZtM+h+fknsYkTTGQ3MMf56ijs+Bsof0hci6IoBy/i8OepnQLtKwLyfsnkAgvVx+iTgrfwmyq6O9vrq6W1ytLn2v67YflH1G8XK0+Rre3kv5S01tKI/9K01fL9dKx/4uxE1njiv6rpv+5vFxfXl/Et+vlOpL035D8rz5FLI9gT1awijZB5LAhJSRUhoamaYASWLkk35OKFPAuuri8RpMfo+UVmnyezOYLVwLRdPnz2SIItBdBiz2rSHWQxZVxQStVQJggMP2UqqijtKw+nYZKVW0HKsnKVp+DI2tOsHCITgW4LC+xcdc43PIC7kmVkSRXybfxQ2zqZYpfSvpNyM8Hkoms3Kn3hTl3Um+3tMLD2W5DBskfyIHD75M94zTdUT06zjDyu6xU/rHNJmoydIlgIgJvMLp3M41U9iDNOTUqcgiM6WSxPSCqBc3/bYlXEr8+5dNQKhPSpWyMHs4RycrEzQXXotvckRIhnI5N24O3jQ9teUMQwcSQzgwKCfLcwQWj0eyYRtCmvxctUyN3v5kPIzt0NIFn3/fkdPTCEenWnRR1hstJ0BwNXyRcgF1VM9k5KzpTpCAHKJlcJH/XGY4XkufwqtO5nMFfdbGHFJkiPwAr9STr2NSJMhbPOgxw5tDU4dj5cz4IpQGq/Oii43eszlMFFEfeluU5e8BOTQ5usHs2bEqkqYXDNRVrH9wUpM6FH80JyfUneJBaN6nmTUXQkk6pgyMV8JNrVC60k0pTCj4Oz1OTPJbgIyAdUz82Sfrr45SujYbTxBq0k9eqmqqws1UNVoYjdLiW1dLAlwQVUtmh4g47vK4qvKM9fUWYxnY2Gbj7usfzUwfrUB7J3lwVK2mlmztmjxyG7Q3T4XhXlneDjE5356RVZ/8qoPjYazJIkc41xsr0zzPv9tbImdwRHb44daD6R1UvPvNjo8dZDd+fyf7QH51qL8LAx2+/HF1nnirr5kVH3MkLSgwuklbwx5LjxT2K+FFY/2+UvolsG9Hia1z38bX4W4GfCC4Mn8H6ZnVzDlmxz2mhhhVKynutgnifEfV7dVg0ka97Xe9zf3fZ36CeFh5UnJbyVJSTay3l4evfpk4gm3CAvXwMLx6j0Z49Mtp2iXQv6vivMH8r+Q80mndb</hdl-module>
-            <hdl-module name="ov7670_controller" module-type="0" module-id="5" compressed="0" checksum="15500">AAAJOHjahVZta9swEP48/Yr71CXQkThbO4hn2NqkZdB1o+0GZQwj23Iq5rdactMwtt8+vdmWHTs1hTr3nO71uZNRmkdVQiDEKSmxTzNOyhiHZIIAaFZUHNonTH4fw4C8ZNzPjpFAZjNjCGg+ZCDNmV9IM2PgQ0niUfCJ7bKwRX++X85/tWgUSCiveOekgnSAMAYX2+gA+mziNWDjNdhx4sd56Ve45EOuGckivyQ42iE0dVV1Lm6/AOOYE4hImOASc5pnTFaO7woSkRhIVqUylD9Imvi8ulpbVfBgfqzkP27vr8/9i/Xqcq3ljpaf3d+tHVt/0coXtvytlt+ur1f+3Vf/+6ebOyV/J8R/azKoSH0ZmStD3JOCzsV/FAdlpK4MXPyVZGM1Rz0FfSaJ/+gqr6BqEVRxTEoQFQScJLqnDMI8pdkG4jJPgT/UvDRGe49kku+4B8DFCChpNnpSgerklpakjyoS6rPj8MJOVLigTIwV5AWpOw4i5y3eMfg4KXJGog2R0zWFQOhmCNkpNKY/eFbGbf423gxYraJzsVXa1NtC7JmQ4lrFZGSpWCWwKtK3ocS1DqpR9RJiRiaGO1PQ6c66z5ksxBJuCC8peZKU+CYpBCvMsWbHuWLGrP8geKXnZmmKaQ2k9uhZ0+MCGhpYMyWvg7lr4c2r0EMI7KMdBct+N4jDDmg8MaX0PAHA0VFde/nbMeSAgYTU2LuihEofYjFPsmKKVinBGYOMbEXVRMWAMjFqeso6+fTfuv+Uh35FX0xHE1RFL7PRfG6S09xrUE3VTqpidihrMsljZcHKSG0ViAQlJjEVS17tZKnnnL4JKDf4zeXZyenJVGaOnzBNcCDuO8zNvkZDDW4WlmeuFneg6vbyHKMJkISRXmedkc6+wNSD3Wqd2lEt9ynTvbZk07qrebSzTkehS/0uDwcCBbDHRdxzuEr4sjmnLg9kjsjlgPZ8oNrcC6uzc23LXfSv+aU8oMaUbDxmjG6y9ivAm6uFYIvVt4OnskJInNPfS+g/INhfpQ==</hdl-module>
+            <hdl-module name="ov7670_controller" module-type="0" module-id="5" compressed="0" checksum="37770">AAAItXjahVZtb9MwEP6Mf8V9Gq001GawITVEgq0dQoKBtoE0IRQ5idNZ5KWL3XUVgt+OfXYTJ006a1Lbe87ne3nubiQvk3XGIKY5q2jIC8mqlMZsRAB4sVpLaE6c/T6GHnklZFgcK2AysXaAl33381KEK21lCLyvWDoIPoptETfoz7ez6a8GTSINlWvZuomQ8Q+G4NUmOYA+WX8tWL8abSUL07IK17SSfU8LViRhxWiyJWTsY3Yub76AkFQySFic0YpKXhZCQXK7YglLgRXrXHvyh2gLn+afF04SApgeo/zHzd3VRXi5mH9cGLln5Od3twvP1T9p5Ceu/LWR3yyu5uHt1/D7h+tblL9R4r87KqCjofbMJ0q+JwUTSvigLmpPfe24+qvY0qkNnhV/Yln4YJIQrdOUVaBSBzTLTDEFxGXOiyWkVZmDvN/x0ZrrHE2h0PMPgCcDoObX4E0E8eaGV6yLIvvM3WEYbwOmYTJRT3Ch2gnKFWtKTbMN3Qp4P1qVgiVLprtqDJHSLQhxQ6hNvwuciJv4XbzurJ2KicVVaUJvErFnQot3KjYiR8VJgZORrg0U73TwI6aCjSxZxkY0aZ9zHf4MrpmsOHvURPimKQNzKqnhxAXyYdI9BF6YPpnZFDr9Zx4MnG7xgfT1p+2Kl9HUr3EFkp3/rY5rP3TYCE9HNklBoAA4OtplVf/2bNmhx2lsZV+lCfUhVZ2is4KEyRktBBRsozKjsgJcqCYy/dN1v/XNfqDpbrqejcNwDt3WYRiK1lEZOtWoYV8rRtUOXNQhlClacELBEQGJqvco5Wpg43zVet7Zq4hLi19/PD89Ox3rkOkj5RmN1Oqi0s5esjdxArsa/J4Uu9OvVXdgmWCd2nkDtXuGbwfr0dTddWW2T4r2rtHVcQbqIT57bYUWt3pcA7WWUrrO5KzWxcFOrJruY+u3uUTUwh8YaAg5K1SPh3/1L9woVAi+LJodHEyxP10xbu4AnSVEvWn+WSH/AbStTxM=</hdl-module>
             <hdl-module name="main_tb" module-type="1" module-id="1" compressed="0" checksum="15343">AAAK9XjatVZtb9s2EP6uX3FoC1TCslrymjSbGmBO46xGkyZw3BZbUXC0RClE9QaJTtIv++07Um+kaCxFgQmw5Ds+eu5OfHgk/C14zpqIZgyCopkFVeM4kJfxDh055QURW3C90AGoaE1zJlgNq/fkzcU78vYv6K8TeDknvu/Ln4k9W2wW5Hy9uFyO2ONweBFmMyh2+RaRZQIxFRS2XDRgcJwuPpyR9WKz1OIFweEcY/UcoqZFk3MheJFCUzEWmxRXH5frm8Xl9cXq/R/k8upsKSmOQj0NjIs5JA3DB2Zzx+qMVibLzebqmpyuNqAnYhaTsSIVt7KYRpSVIjUoLm5OwbwsilgCc14waFjNadZ+FlVhggzBCVwiiSgVl5nf8oK8WfwneVTmeVlARMVtGTOArMS5Vwwg5/R6uV5dneFrczWPzmMAbRS/yzh6fNQKgReCpZgZD1FWULMUOImyr+FgVGU9GvWD/H/PawZlE5FI1Blhhe1DfbLBWz+QcrRKgqVpVrkThE7s7cSOJnY8sdnETiZ2qorb0VoQUZJXDdby1JXfDuCFvVZcy+UdtFh7rbiWyzvoiO1F4VquAWzL37VcA9hWuWu5BrCtZ9dy9fXZ8nQtl4dQD+KdALd9SellfMEwe2IlIx2jmSOmfgAdo5k9RhOdxBimhZEi1DDS7DFKkmMswxx4pFBHjGGOGCXfEaOZwwx0mjZB231EkYmJ9mFiExPvwzATw/ZhEhOT7MOkJibVFKBWFM3u6bcG19LYeGZzr+0g2GP+6VqJ0+4AtPkqv4h6flisN+TTerVZktM/N8tQReVFhbL6PC6pn4Pf/C+qu4bIIJ+fX6GnAw+NS5pblvLCaRNU0nmNnfX51g8731N3bH+eZJMNsB8LfLVTzWa/ohMbt5A9nWX0G3SIBOXqciwJYRxea5sm2ifo+gkCz+nVoeei56MK4F9CbchKq4urZQfAitiZcmFtwUBksUxJWga8y4/vqLbPhdy5xlSfxbu8SjieKtwn3bnixV0UP/HCcfiO1g24/kF/8OjG+vn2e1Oubs2UC1nuc874sdXf392qbFicspbBm6rCPX5+6weemhncxTJ5dFDquee4g9M63eWsEOB355qg5T/yhwB9Jn1obeh/j/09Aea/fEeAQAYIfizAy8PHAwSyguAHKzg/fzRAgBeRtzbA4cD/LEEVNrdhq0xUJd7bg+2/MDvS8g==</hdl-module>
         </custom-modules>
         <ip-modules>
@@ -902,8 +901,14 @@
                 <record id="IOB_t[0:0]_xy[0:7]_in0">
                     <port-name>cmos_pclk_i</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[0:7]_out1">
+                    <port-name>cmos_pclk_oe</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[0:8]_in0">
                     <port-name>cmos_href_i</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[0:8]_out1">
+                    <port-name>cmos_href_oe</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[0:9]_out0">
                     <port-name>SAMP_CLK</port-name>
@@ -935,14 +940,26 @@
                 <record id="IOB_t[0:0]_xy[31:22]_in0">
                     <port-name>cmos_db_i[3]</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:22]_out1">
+                    <port-name>cmos_db_oe[3]</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[31:23]_in0">
                     <port-name>cmos_db_i[2]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:23]_out1">
+                    <port-name>cmos_db_oe[2]</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:24]_in0">
                     <port-name>cmos_db_i[1]</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:24]_out1">
+                    <port-name>cmos_db_oe[1]</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[31:25]_in0">
                     <port-name>cmos_db_i[0]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:25]_out1">
+                    <port-name>cmos_db_oe[0]</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:26]_out0">
                     <port-name>cmos_xclk_o</port-name>
@@ -953,17 +970,32 @@
                 <record id="IOB_t[0:0]_xy[31:4]_in0">
                     <port-name>cmos_vsync_i</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:4]_out1">
+                    <port-name>cmos_vsync_oe</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[31:5]_in0">
                     <port-name>cmos_db_i[7]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:5]_out1">
+                    <port-name>cmos_db_oe[7]</port-name>
                 </record>
                 <record id="IOB_t[0:0]_xy[31:6]_in0">
                     <port-name>cmos_db_i[6]</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:6]_out1">
+                    <port-name>cmos_db_oe[6]</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[31:8]_in0">
                     <port-name>cmos_db_i[5]</port-name>
                 </record>
+                <record id="IOB_t[0:0]_xy[31:8]_out1">
+                    <port-name>cmos_db_oe[5]</port-name>
+                </record>
                 <record id="IOB_t[0:0]_xy[31:9]_in0">
                     <port-name>cmos_db_i[4]</port-name>
+                </record>
+                <record id="IOB_t[0:0]_xy[31:9]_out1">
+                    <port-name>cmos_db_oe[4]</port-name>
                 </record>
             </records>
         </io-spec-tool>
@@ -1172,6 +1204,11 @@
         </preset0>
         <preset1>
             <markers>
+                <marker0>
+                    <color>1</color>
+                    <index>1</index>
+                    <time>1709000</time>
+                </marker0>
                 <trigTime>0</trigTime>
             </markers>
             <measurements>
@@ -1181,7 +1218,7 @@
                     <marker2>-1</marker2>
                 </item0>
             </measurements>
-            <name>Autosaved  @18:53:41</name>
+            <name>Autosaved  @23:44:52</name>
             <plotsOrder>8, 9, 10, 11, 12, 13, 14, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39</plotsOrder>
             <protocolAnalyzers>
                 <analyzer0>
@@ -1217,15 +1254,15 @@
                     <userLabel>TX</userLabel>
                 </analyzer2>
             </protocolAnalyzers>
-            <sampleRate>16</sampleRate>
+            <sampleRate>11</sampleRate>
             <startMode>2</startMode>
             <trigMode>1</trigMode>
-            <trigPos>8000</trigPos>
+            <trigPos>6400</trigPos>
             <trigType>0</trigType>
             <triggerList>
                 <trigger0>
-                    <channel>38</channel>
-                    <type>2</type>
+                    <channel>11</channel>
+                    <type>1</type>
                 </trigger0>
             </triggerList>
             <viewOptions>111111111111111111100</viewOptions>

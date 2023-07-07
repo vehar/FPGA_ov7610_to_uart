@@ -10,9 +10,7 @@ import cv2
 
 reg = []
 
-slave_address = bytes.fromhex("21")
-
-with open("new_registers_2.csv", "r", encoding="utf-8") as f:
+with open("C:\\Users\\vkhmelev\\OneDrive - Renesas Electronics Corporation\\My\\FPGA_ov7610_to_uart\\new_registers.csv", "r", encoding="utf-8") as f:
     for line in f:
         if line[:2] == "//" or line[0] == "#":
             continue
@@ -22,22 +20,23 @@ with open("new_registers_2.csv", "r", encoding="utf-8") as f:
 
 # open serial
 ser = serial.Serial(
-    port='/dev/ttyUSB2',
-    baudrate=115200  #,
+    # port='/dev/ttyUSB2',
+    port='COM16',
+    baudrate=115200
 )
 
 if(not ser.isOpen()):
     ser.open()
 
-
+slave_address = bytes.fromhex("21")
 # size of an image
 img_w = 240
 img_h = 320
 
 commands = {
-    "begin capture": 1,
-    "end capture": 2,
-    "send regs": 3
+    "start": 1,
+    "stop": 2,
+    "init": 3
 }
 
 waiting = 1
@@ -47,34 +46,20 @@ while waiting:
         ser.close()
         exit()
 
-    elif in_command == "send regs":
+    elif in_command == "init":
         bytes_arr = commands[in_command].to_bytes(1,"little")
         time.sleep(0.67)
         for elem in reg:
-            ser.write(bytes_arr)
-            time.sleep(0.1)
+            to_write = bytes_arr + slave_address + elem[0] + elem[1]
+            ser.write(to_write)
+            #time.sleep(0.1)
 
-            ser.write(slave_address)
-            time.sleep(0.1)
-
-            ser.write(elem[0])
-            time.sleep(0.1)
-
-            ser.write(elem[1])
-            time.sleep(0.1)
-
-
-
-        time.sleep(0.67)
-
-
-
-    elif in_command == "begin capture":  # not working for now
+    elif in_command == "start":  # not working for now
         bytes_arr = commands[in_command].to_bytes(1,"little")
         ser.write(bytes_arr)
         ser.write(slave_address)
 
-    elif in_command == "end capture": # not working for now
+    elif in_command == "stop": # not working for now
         bytes_arr = commands[in_command].to_bytes(1,"little")
         ser.write(bytes_arr)
         ser.write(slave_address)
@@ -100,7 +85,6 @@ while True:
 
     img_to_save = np.zeros((img_w, img_h, 3))
 
-
     counter = 0
     h_counter = 0
     w_counter = 0
@@ -117,7 +101,6 @@ while True:
 
 
         counter += 1
-
         w_counter += 1
 
         if w_counter >= img_w:
@@ -135,6 +118,11 @@ while True:
             img_to_save[w_counter, h_counter, 2] = red_c
 
 
-    cv2.imwrite("test.png", img_to_save)
-   # cv2.imshow('frame' , img_to_save)   # not tested
+    cv2.imwrite("A:\\test.png", img_to_save)
+    cv2.imshow('frame' , img_to_save)   # not tested
+    # This line is necessary to hold the image window open until the user closes it
+    cv2.waitKey(0)
+
+    # This line closes all windows
+    cv2.destroyAllWindows()
     print("frame", output_1_byte, output_2_byte)
