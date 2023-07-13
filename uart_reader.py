@@ -10,7 +10,7 @@ import cv2
 
 reg = []
 
-with open("C:\\Users\\vkhmelev\\OneDrive - Renesas Electronics Corporation\\My\\FPGA_ov7610_to_uart\\new_registers.csv", "r", encoding="utf-8") as f:
+with open("C:\\Users\\vkhmelev\\OneDrive - Renesas Electronics Corporation\\My\\FPGA_ov7610_to_uart\\new_registers_my.csv", "r", encoding="utf-8") as f:
     for line in f:
         if line[:2] == "//" or line[0] == "#":
             continue
@@ -21,7 +21,7 @@ with open("C:\\Users\\vkhmelev\\OneDrive - Renesas Electronics Corporation\\My\\
 # open serial
 ser = serial.Serial(
     # port='/dev/ttyUSB2',
-    port='COM16',
+    port='COM17',
     baudrate=115200
 )
 
@@ -30,8 +30,8 @@ if(not ser.isOpen()):
 
 slave_address = bytes.fromhex("21")
 # size of an image
-img_w = 240
 img_h = 320
+img_w = 240
 
 commands = {
     "start": 1,
@@ -96,16 +96,15 @@ while True:
         output_1_byte = int.from_bytes(output_1_byte, "big")
         output_2_byte = int.from_bytes(output_2_byte, "big")
 
-        if (counter % 100) == 0:
+        if (counter % 1000) == 0:
             print(f"{counter}/{(img_w*img_h)-1 }")
 
-
         counter += 1
-        w_counter += 1
+        h_counter += 1
 
-        if w_counter >= img_w:
-            h_counter += 1
-            w_counter = 0
+        if h_counter >= img_h:
+            h_counter = 0
+            w_counter += 1
 
         if output_1_byte != b'' and output_2_byte != b'':
             red_c = output_1_byte&0xF8
@@ -118,6 +117,7 @@ while True:
             img_to_save[w_counter, h_counter, 2] = red_c
 
 
+    img_to_save = (img_to_save * 255).astype(np.uint8)
     cv2.imwrite("A:\\test.png", img_to_save)
     cv2.imshow('frame' , img_to_save)   # not tested
     # This line is necessary to hold the image window open until the user closes it
